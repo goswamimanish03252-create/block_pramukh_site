@@ -8,11 +8,7 @@
     <meta name="description" content="डॉ. आशीष शर्मा की आधिकारिक वेबसाइट। जनसेवा, ग्रामीण विकास, शिक्षा, स्वास्थ्य और सामाजिक गतिविधियों की जानकारी।">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html {
             scroll-behavior: smooth;
@@ -20,8 +16,7 @@
         }
 
         body {
-            font-family: "Noto Sans Devanagari", "Mangal",
-                         "Arial Unicode MS", sans-serif;
+            font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
             background: #f4f7fa;
             color: #253238;
             line-height: 1.8;
@@ -45,16 +40,9 @@
             flex-wrap: wrap;
         }
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
+        .logo { font-size: 25px; font-weight: bold; }
 
-        nav {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+        nav { display: flex; gap: 20px; flex-wrap: wrap; }
 
         nav a {
             color: white;
@@ -63,9 +51,7 @@
             font-weight: bold;
         }
 
-        nav a:hover {
-            color: #ffd166;
-        }
+        nav a:hover { color: #ffd166; }
 
         .hero {
             background: linear-gradient(120deg, #124632, #21734d);
@@ -99,9 +85,7 @@
             display: block;
         }
 
-        .hero-content {
-            max-width: 680px;
-        }
+        .hero-content { max-width: 680px; }
 
         .hero h1 {
             font-size: 46px;
@@ -109,10 +93,7 @@
             margin-bottom: 12px;
         }
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
+        .hero p { font-size: 20px; margin-bottom: 25px; }
 
         .btn {
             display: inline-block;
@@ -126,9 +107,7 @@
             font-size: 17px;
         }
 
-        .btn:hover {
-            background: #ffbd36;
-        }
+        .btn:hover { background: #ffbd36; }
 
         section {
             padding: 55px 6%;
@@ -149,9 +128,7 @@
             font-size: 19px;
         }
 
-        .light-section {
-            background: white;
-        }
+        .light-section { background: white; }
 
         .cards {
             display: grid;
@@ -177,9 +154,7 @@
             background: #eeeeee;
         }
 
-        .card-content {
-            padding: 18px;
-        }
+        .card-content { padding: 18px; }
 
         .card h3 {
             color: #15553b;
@@ -187,9 +162,7 @@
             margin-bottom: 8px;
         }
 
-        .card p {
-            font-size: 16px;
-        }
+        .card p { font-size: 16px; }
 
         .gallery-note {
             text-align: center;
@@ -215,9 +188,7 @@
             padding: 24px 15px;
         }
 
-        footer p {
-            margin: 5px 0;
-        }
+        footer p { margin: 5px 0; }
 
         @media (max-width: 800px) {
             .hero-inner {
@@ -226,79 +197,37 @@
                 gap: 25px;
             }
 
-            .hero h1 {
-                font-size: 34px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
+            .hero h1 { font-size: 34px; }
+            .hero p { font-size: 18px; }
 
             .profile-frame {
                 width: 230px;
                 height: 260px;
             }
 
-            .cards {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .navbar {
-                justify-content: center;
-            }
-
-            nav {
-                justify-content: center;
-                gap: 12px;
-            }
+            .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .navbar { justify-content: center; }
+            nav { justify-content: center; gap: 12px; }
         }
 
         @media (max-width: 520px) {
-            header {
-                padding: 12px 4%;
-            }
-
-            .logo {
-                font-size: 22px;
-            }
-
-            nav a {
-                font-size: 15px;
-            }
-
-            .hero {
-                padding: 35px 5%;
-            }
-
-            .hero h1 {
-                font-size: 29px;
-            }
-
-            section {
-                padding: 38px 5%;
-            }
-
-            .section-title {
-                font-size: 28px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .card img {
-                height: 230px;
-            }
+            header { padding: 12px 4%; }
+            .logo { font-size: 22px; }
+            nav a { font-size: 15px; }
+            .hero { padding: 35px 5%; }
+            .hero h1 { font-size: 29px; }
+            section { padding: 38px 5%; }
+            .section-title { font-size: 28px; }
+            .cards { grid-template-columns: 1fr; }
+            .card img { height: 230px; }
         }
     </style>
 </head>
 
 <body>
-
 <header>
     <div class="navbar">
         <div class="logo">डॉ. आशीष शर्मा</div>
-
         <nav>
             <a href="#home">होम</a>
             <a href="#about">परिचय</a>
@@ -310,113 +239,78 @@
 </header>
 
 <main>
-
     <section class="hero" id="home">
         <div class="hero-inner">
-
             <div class="profile-frame">
                 <img
                     src="./profile.jpg"
                     alt="डॉ. आशीष शर्मा"
-                    onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='./image.jpg';}"
+                    onerror="this.onerror=null;this.src='./image.jpg';"
                 >
             </div>
 
             <div class="hero-content">
                 <h1>डॉ. आशीष शर्मा</h1>
-
                 <p>
                     जनसेवा, ग्रामीण विकास, शिक्षा और जनकल्याण के लिए
                     समर्पित। क्षेत्र के विकास और आम नागरिकों की सहायता
                     के लिए निरंतर प्रयास।
                 </p>
-
                 <a class="btn" href="#about">हमारे बारे में</a>
                 <a class="btn" href="#gallery">फोटो देखें</a>
             </div>
-
         </div>
     </section>
 
     <section id="about">
         <h2 class="section-title">हमारा परिचय</h2>
-
         <div class="intro">
             <p>
                 डॉ. आशीष शर्मा की इस वेबसाइट का उद्देश्य जनसेवा से जुड़े
                 कार्यों, सामाजिक गतिविधियों, ग्रामीण विकास, शिक्षा,
-                स्वास्थ्य और जनकल्याण से संबंधित जानकारी लोगों तक
-                पहुँचाना है।
+                स्वास्थ्य और जनकल्याण से संबंधित जानकारी लोगों तक पहुँचाना है।
             </p>
-
             <p>
                 यहाँ क्षेत्र में आयोजित कार्यक्रमों, विकास कार्यों और
-                सामाजिक गतिविधियों की तस्वीरें एवं समाचार साझा किए
-                जा सकते हैं।
+                सामाजिक गतिविधियों की तस्वीरें एवं समाचार साझा किए जा सकते हैं।
             </p>
         </div>
     </section>
 
     <section class="light-section" id="services">
         <h2 class="section-title">जनसेवा एवं सामाजिक कार्य</h2>
-
         <div class="cards">
-
             <article class="card">
-                <img
-                    src="./janseva.jpg"
-                    alt="जनसेवा कार्यक्रम"
-                    loading="lazy"
-                >
+                <img src="./janseva.jpg.jpeg" alt="जनसेवा कार्यक्रम" loading="lazy">
                 <div class="card-content">
                     <h3>जनसेवा</h3>
-                    <p>
-                        क्षेत्र के लोगों की सहायता और सामाजिक
-                        गतिविधियों में सहभागिता।
-                    </p>
+                    <p>क्षेत्र के लोगों की सहायता और सामाजिक गतिविधियों में सहभागिता।</p>
                 </div>
             </article>
 
             <article class="card">
-                <img
-                    src="./water.jpg"
-                    alt="जल एवं जनकल्याण कार्य"
-                    loading="lazy"
-                >
+                <img src="./water.jpg.jpeg" alt="जल एवं जनकल्याण कार्य" loading="lazy">
                 <div class="card-content">
                     <h3>जनकल्याण</h3>
-                    <p>
-                        जनहित, बुनियादी सुविधाओं और स्थानीय विकास
-                        से जुड़े प्रयास।
-                    </p>
+                    <p>जनहित, बुनियादी सुविधाओं और स्थानीय विकास से जुड़े प्रयास।</p>
                 </div>
             </article>
 
             <article class="card">
-                <img
-                    src="./yogi.jpg"
-                    alt="सामाजिक कार्यक्रम"
-                    loading="lazy"
-                >
+                <img src="./yogi.jpg.jpeg" alt="सामाजिक कार्यक्रम" loading="lazy">
                 <div class="card-content">
                     <h3>सामाजिक सहभागिता</h3>
-                    <p>
-                        सामाजिक कार्यक्रमों और जनहित की गतिविधियों
-                        में सहभागिता।
-                    </p>
+                    <p>सामाजिक कार्यक्रमों और जनहित की गतिविधियों में सहभागिता।</p>
                 </div>
             </article>
-
         </div>
     </section>
 
     <section id="gallery">
         <h2 class="section-title">फोटो गैलरी</h2>
-
         <div class="cards">
-
             <article class="card">
-                <img src="./iso.jpg" alt="सामाजिक कार्यक्रम" loading="lazy">
+                <img src="./iso.jpg.jpeg" alt="सामाजिक कार्यक्रम" loading="lazy">
                 <div class="card-content">
                     <h3>सामाजिक कार्यक्रम</h3>
                     <p>कार्यक्रमों एवं गतिविधियों की तस्वीरें।</p>
@@ -424,7 +318,7 @@
             </article>
 
             <article class="card">
-                <img src="./janseva.jpg" alt="जनसेवा गतिविधि" loading="lazy">
+                <img src="./janseva.jpg.jpeg" alt="जनसेवा गतिविधि" loading="lazy">
                 <div class="card-content">
                     <h3>जनसेवा गतिविधियाँ</h3>
                     <p>जनसेवा से संबंधित कार्यक्रम।</p>
@@ -432,7 +326,7 @@
             </article>
 
             <article class="card">
-                <img src="./khandauli.jpg" alt="खंदौली क्षेत्र" loading="lazy">
+                <img src="./khanduali.jpg.jpeg" alt="खंडौली क्षेत्र" loading="lazy">
                 <div class="card-content">
                     <h3>क्षेत्रीय गतिविधियाँ</h3>
                     <p>क्षेत्र में आयोजित कार्यक्रमों की झलक।</p>
@@ -440,7 +334,7 @@
             </article>
 
             <article class="card">
-                <img src="./missionsakti.jpg" alt="मिशन शक्ति कार्यक्रम" loading="lazy">
+                <img src="./missionsakti.jpg.jpeg" alt="मिशन शक्ति कार्यक्रम" loading="lazy">
                 <div class="card-content">
                     <h3>मिशन शक्ति</h3>
                     <p>महिला सशक्तीकरण से जुड़ी गतिविधियाँ।</p>
@@ -448,7 +342,7 @@
             </article>
 
             <article class="card">
-                <img src="./plant.jpg" alt="पौधारोपण कार्यक्रम" loading="lazy">
+                <img src="./plant.jpg.jpeg" alt="पौधारोपण कार्यक्रम" loading="lazy">
                 <div class="card-content">
                     <h3>पर्यावरण संरक्षण</h3>
                     <p>पर्यावरण और हरित क्षेत्र से जुड़े प्रयास।</p>
@@ -456,43 +350,28 @@
             </article>
 
             <article class="card">
-                <img src="./stadium.jpg" alt="स्टेडियम एवं क्षेत्रीय गतिविधि" loading="lazy">
+                <img src="./stadium.jpg.jpeg" alt="स्टेडियम एवं क्षेत्रीय गतिविधि" loading="lazy">
                 <div class="card-content">
                     <h3>क्षेत्रीय विकास</h3>
                     <p>विकास कार्यों और क्षेत्रीय गतिविधियों की तस्वीरें।</p>
                 </div>
             </article>
-
         </div>
 
         <p class="gallery-note">
-            तस्वीरें देखने के लिए सभी फोटो फाइलें GitHub पर सही नाम से अपलोड होनी चाहिए।
+            जनसेवा, ग्रामीण विकास और सामाजिक गतिविधियों की तस्वीरें।
         </p>
     </section>
 
     <section class="light-section" id="contact">
         <h2 class="section-title">संपर्क करें</h2>
-
         <div class="contact-box">
-            <p>
-                जनसेवा, सामाजिक गतिविधियों और क्षेत्रीय विकास से
-                संबंधित जानकारी के लिए संपर्क करें।
-            </p>
-
-            <p style="margin-top: 15px;">
-                <strong>डॉ. आशीष शर्मा</strong>
-            </p>
-
-            <p>
-                खंदौली, आगरा, उत्तर प्रदेश
-            </p>
-
-            <p style="margin-top: 12px;">
-                संपर्क नंबर और ईमेल की जानकारी यहाँ जोड़ी जा सकती है।
-            </p>
+            <p>जनसेवा, सामाजिक गतिविधियों और क्षेत्रीय विकास से संबंधित जानकारी के लिए संपर्क करें।</p>
+            <p style="margin-top: 15px;"><strong>डॉ. आशीष शर्मा</strong></p>
+            <p>खंदौली, आगरा, उत्तर प्रदेश</p>
+            <p style="margin-top: 12px;">संपर्क नंबर और ईमेल की जानकारी यहाँ जोड़ी जा सकती है।</p>
         </div>
     </section>
-
 </main>
 
 <footer>
@@ -501,9 +380,7 @@
 </footer>
 
 <script>
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>

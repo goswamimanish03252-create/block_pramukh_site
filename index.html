@@ -5,441 +5,756 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1930">
-<title>Dr. Ashish Sharma | Public Service Profile</title>
+<meta name="description" content="Official public service profile of Adv. Ashish Sharma, Block Pramukh, Khandauli (Agra).">
+<title>Adv. Ashish Sharma | Block Pramukh Khandauli</title>
 
 <style>
 :root {
-    --navy: #0b1930;
-    --blue: #173c63;
-    --gold: #e5b35b;
-    --light: #f3f6fb;
-    --muted: #657187;
-    --white: #ffffff;
-    --border: #e3e9f2;
+  --navy:#0b1930;
+  --blue:#173c63;
+  --gold:#e5b35b;
+  --light:#f3f6fb;
+  --muted:#657187;
+  --white:#fff;
+  --border:#e3e9f2;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:100px; }
-body { font-family:Arial,Helvetica,sans-serif; color:var(--navy); line-height:1.7; background:white; }
-a { text-decoration:none; color:inherit; }
-button { font:inherit; cursor:pointer; }
-section[id] { scroll-margin-top:100px; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--navy);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+img{max-width:100%}
+section[id]{scroll-margin-top:90px}
 
-.header { position:sticky; top:0; z-index:1000; background:#fffffff7; border-bottom:1px solid var(--border); backdrop-filter:blur(12px); }
-.navbar { max-width:1250px; min-height:82px; padding:12px 24px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-.brand { display:flex; align-items:center; gap:12px; }
-.brand-logo { width:52px; height:52px; display:grid; place-items:center; border-radius:16px; background:linear-gradient(135deg,var(--gold),#ffe8ae); font-weight:900; font-size:18px; }
-.brand-name { font-size:15px; font-weight:900; letter-spacing:1px; }
-.brand-subtitle { font-size:10px; font-weight:bold; letter-spacing:1.4px; color:var(--muted); }
-.nav-links { display:flex; align-items:center; gap:8px; }
-.nav-btn { display:inline-block; padding:11px 16px; border:1px solid transparent; border-radius:13px; color:#35435a; background:transparent; font-size:14px; font-weight:bold; transition:all .25s; }
-.nav-btn:hover { background:#eef2f8; transform:translateY(-2px); }
-.nav-btn.active { background:var(--navy); color:white; border-color:var(--gold); box-shadow:0 7px 20px #0b19302b; }
-.menu-toggle { display:none; padding:7px 13px; border:1px solid var(--border); border-radius:10px; background:white; color:var(--navy); font-size:23px; }
+.header{position:sticky;top:0;z-index:1000;background:#fffffff7;border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.navbar{max-width:1250px;min-height:78px;padding:12px 24px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-logo{width:49px;height:49px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--gold),#ffe8ae);font-weight:900;font-size:18px}
+.brand-name{font-size:14px;font-weight:900;letter-spacing:.4px}
+.brand-subtitle{font-size:11px;font-weight:bold;color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-btn{padding:9px 11px;border-radius:10px;color:#35435a;font-size:13px;font-weight:bold}
+.nav-btn:hover,.nav-btn.active{background:var(--navy);color:#fff}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.lang-btn,.menu-toggle{border:1px solid var(--border);border-radius:10px;padding:9px 12px;background:white;color:var(--navy);font-weight:bold}
+.lang-btn{background:var(--gold);border-color:var(--gold)}
+.menu-toggle{display:none;font-size:21px}
 
-.hero { color:white; background:radial-gradient(circle at 85% 20%,#285783,transparent 35%),linear-gradient(125deg,#09162a,#173b60); }
-.hero-inner { max-width:1250px; min-height:540px; padding:65px 25px; margin:auto; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:50px; }
-.eyebrow { margin-bottom:20px; color:var(--gold); font-size:12px; font-weight:bold; letter-spacing:2px; }
-.hero h1 { margin-bottom:22px; font-family:Georgia,serif; font-size:clamp(38px,5vw,68px); line-height:1.13; }
-.hero h1 span { display:block; color:var(--gold); }
-.hero-description { max-width:600px; margin-bottom:24px; color:#dbe6f3; }
-.hero-actions,.contact-actions { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:22px; }
-.btn { display:inline-flex; justify-content:center; align-items:center; padding:12px 20px; border:1px solid transparent; border-radius:12px; font-weight:bold; font-size:14px; transition:transform .25s,box-shadow .25s; }
-.btn:hover { transform:translateY(-3px); box-shadow:0 10px 25px #0002; }
-.btn-gold { background:var(--gold); color:var(--navy); }
-.btn-outline { border-color:#ffffff80; color:white; background:transparent; }
-.location { color:#c9d8e9; font-size:12px; letter-spacing:1px; }
-.profile-frame { max-width:380px; width:100%; padding:12px; margin:auto; border:1px solid #e5b35b88; border-radius:26px; background:#ffffff0d; box-shadow:0 25px 60px #0004; }
-.profile-photo { width:100%; height:365px; display:block; object-fit:cover; object-position:center top; border-radius:19px; background:#e4eaf2; }
-.profile-caption { padding:14px 8px 7px; text-align:center; }
-.profile-caption h2 { font-size:20px; }
-.profile-caption p { color:#d4e0ee; font-size:13px; }
+.hero{color:#fff;background:radial-gradient(circle at 85% 20%,#285783,transparent 35%),linear-gradient(125deg,#09162a,#173b60)}
+.hero-inner{max-width:1250px;min-height:540px;padding:55px 25px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px}
+.eyebrow{margin-bottom:17px;color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:1.5px}
+.hero h1{margin-bottom:18px;font-family:Georgia,"Noto Serif Devanagari",serif;font-size:clamp(36px,5vw,62px);line-height:1.2}
+.hero h1 span{display:block;color:var(--gold)}
+.hero-description{max-width:650px;margin-bottom:23px;color:#dbe6f3}
+.hero-actions,.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 19px;border:1px solid transparent;border-radius:11px;font-weight:bold;font-size:14px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-outline{border-color:#ffffff80;color:white;background:transparent}
+.location{color:#c9d8e9;font-size:12px;letter-spacing:.7px}
+.profile-frame{max-width:390px;width:100%;padding:11px;margin:auto;border:1px solid #e5b35b88;border-radius:25px;background:#ffffff0d;box-shadow:0 25px 60px #0004}
+.profile-photo{width:100%;height:390px;display:block;object-fit:cover;object-position:center 25%;border-radius:17px;background:#e4eaf2}
+.profile-caption{padding:13px 8px 6px;text-align:center}
+.profile-caption h2{font-size:20px}
+.profile-caption p{color:#d4e0ee;font-size:13px}
 
-.section { padding:78px 24px; }
-.section-inner { max-width:1150px; margin:auto; }
-.section-tag { display:inline-block; margin-bottom:15px; padding:6px 13px; border-radius:30px; background:#fff2d8; color:#94631b; font-size:11px; font-weight:bold; letter-spacing:1.3px; }
-.section-title { margin-bottom:18px; font-family:Georgia,serif; font-size:clamp(31px,4vw,46px); line-height:1.2; }
-.section-title span { color:#c58d36; }
-.section-intro { max-width:720px; margin-bottom:30px; color:var(--muted); }
+.section{padding:72px 24px}
+.section-inner{max-width:1150px;margin:auto}
+.section-tag{display:inline-block;margin-bottom:14px;padding:6px 13px;border-radius:30px;background:#fff2d8;color:#94631b;font-size:11px;font-weight:bold;letter-spacing:1px}
+.section-title{margin-bottom:17px;font-family:Georgia,"Noto Serif Devanagari",serif;font-size:clamp(29px,4vw,43px);line-height:1.3}
+.section-title span{color:#c58d36}
+.section-intro{max-width:760px;margin-bottom:28px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:start}
+.about-copy p{margin-bottom:16px;color:var(--muted)}
+.info-card{padding:25px;border:1px solid var(--border);border-radius:19px;background:var(--light)}
+.info-card h3{margin-bottom:10px}
+.info-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px}
+.info-row:last-child{border-bottom:0}
+.info-icon{color:#a67525;font-weight:bold}
 
-.about-grid { display:grid; grid-template-columns:1.1fr .9fr; align-items:start; gap:40px; }
-.about-copy p { margin-bottom:17px; color:var(--muted); }
-.info-card { padding:27px; border:1px solid var(--border); border-radius:20px; background:var(--light); }
-.info-card h3 { margin-bottom:12px; }
-.info-row { display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--border); font-size:14px; }
-.info-row:last-child { border-bottom:none; }
-.info-icon { color:#a67525; font-weight:bold; }
+.initiatives-section{background:var(--light)}
+.cards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.initiative-card{padding:23px;border:1px solid var(--border);border-radius:18px;background:#fff;text-align:left;color:var(--navy);transition:.2s}
+.initiative-card:hover,.initiative-card:focus-visible{transform:translateY(-4px);border-color:var(--gold);outline:none}
+.card-icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:13px;border-radius:14px;background:#fff2d8;font-size:24px}
+.initiative-card h3{margin-bottom:7px;font-size:17px}
+.initiative-card p{color:var(--muted);font-size:14px}
+.card-action{display:inline-block;margin-top:12px;color:#98681f;font-size:12px;font-weight:bold}
+.details-section{display:none}
+.details-section.show{display:block}
+.detail-panel{padding:27px;border:1px solid var(--border);border-radius:20px;background:var(--light)}
+.detail-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.detail-item{padding:18px;border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:13px;background:#fff}
+.detail-item h3{margin-bottom:7px;font-size:16px}
+.detail-item p{color:var(--muted);font-size:14px}
+.detail-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn-dark{background:var(--navy);color:white}
 
-.initiatives-section { background:var(--light); }
-.cards-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
-.initiative-card { width:100%; padding:26px; border:1px solid var(--border); border-radius:20px; background:white; text-align:left; color:var(--navy); box-shadow:0 6px 20px #10274708; transition:transform .25s,box-shadow .25s,border-color .25s; }
-.initiative-card:hover,.initiative-card:focus-visible { transform:translateY(-6px); border-color:var(--gold); box-shadow:0 16px 35px #10274716; outline:none; }
-.initiative-card.selected { border:2px solid var(--gold); background:#fffaf0; box-shadow:0 10px 28px #c58d3620; }
-.card-icon { width:53px; height:53px; display:grid; place-items:center; margin-bottom:17px; border-radius:16px; background:#fff2d8; font-size:25px; }
-.initiative-card h3 { margin-bottom:10px; font-size:18px; }
-.initiative-card p { color:var(--muted); font-size:14px; }
-.card-action { display:inline-block; margin-top:14px; color:#98681f; font-size:12px; font-weight:bold; }
+.complaint-section{background:#f8f9fc}
+.complaint-grid{display:grid;grid-template-columns:1fr .75fr;gap:28px;align-items:start}
+.form-card,.complaint-info{padding:26px;border:1px solid var(--border);border-radius:19px;background:#fff}
+.form-group{margin-bottom:15px}
+.form-group label{display:block;margin-bottom:6px;font-size:14px;font-weight:bold}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px;border:1px solid #cfd8e5;border-radius:10px;background:#fff;color:var(--navy)}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:2px solid #e5b35b;border-color:#c58d36}
+.form-group textarea{min-height:125px;resize:vertical}
+.form-note{margin-top:12px;color:var(--muted);font-size:12px}
+.complaint-info{background:var(--navy);color:white}
+.complaint-info p{margin:10px 0;color:#d0dcec}
+.complaint-info li{margin:10px 0 10px 20px;color:#e1e8f2;font-size:14px}
 
-.details-section { display:none; background:white; }
-.details-section.show { display:block; animation:sectionAppear .4s ease; }
-@keyframes sectionAppear { from {opacity:0;transform:translateY(15px)} to {opacity:1;transform:translateY(0)} }
-.detail-panel { padding:32px; border:1px solid var(--border); border-radius:23px; background:linear-gradient(145deg,#fff,#f5f8fd); box-shadow:0 15px 40px #0b19300d; }
-.detail-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:22px; }
-.detail-item { padding:21px; border:1px solid var(--border); border-left:4px solid var(--gold); border-radius:15px; background:white; }
-.detail-item h3 { margin-bottom:8px; font-size:17px; }
-.detail-item p { color:var(--muted); font-size:14px; }
-.detail-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:25px; }
-.btn-dark { background:var(--navy); color:white; }
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.photo-card{overflow:hidden;border:1px solid var(--border);border-radius:15px;background:#fff}
+.photo-grid img{width:100%;height:245px;display:block;object-fit:cover;background:#e4eaf2}
+.photo-card h3{padding:12px;text-align:center;font-size:15px}
+.photo-missing{display:none;padding:10px;color:#657187;text-align:center;font-size:12px}
 
-.photo-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
-.photo-card { overflow:hidden; border:1px solid var(--border); border-radius:16px; background:white; box-shadow:0 6px 20px #1027470a; }
-.photo-grid img { width:100%; height:250px; display:block; object-fit:cover; background:#e4eaf2; }
-.photo-card h3 { padding:12px; text-align:center; font-size:15px; }
-.photo-missing { display:none; padding:12px; color:#657187; text-align:center; font-size:13px; }
+.contact-panel{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:32px;border-radius:23px;background:var(--navy);color:#fff}
+.contact-panel p{margin-bottom:20px;color:#d0dcec}
+.contact-details{display:grid;align-content:center;gap:12px}
+.contact-item{padding:15px;border:1px solid #ffffff20;border-radius:13px;background:#ffffff0d}
+.contact-item small{display:block;margin-bottom:4px;color:var(--gold)}
+.contact-item strong{overflow-wrap:anywhere}
+.footer{padding:24px 20px;background:#071224;color:#cbd6e5;text-align:center;font-size:12px}
+.footer p+p{margin-top:4px}
 
-.contact-panel { display:grid; grid-template-columns:1fr 1fr; gap:30px; padding:35px; border-radius:25px; background:var(--navy); color:white; }
-.contact-panel p { margin-bottom:22px; color:#d0dcec; }
-.contact-details { display:grid; align-content:center; gap:14px; }
-.contact-item { padding:16px; border:1px solid #ffffff20; border-radius:14px; background:#ffffff0d; }
-.contact-item small { display:block; margin-bottom:4px; color:var(--gold); }
-.contact-item strong { overflow-wrap:anywhere; }
-.footer { padding:26px 20px; background:#071224; color:#cbd6e5; text-align:center; font-size:12px; }
-
-@media(max-width:850px) {
-    .navbar { min-height:74px; padding:12px 18px; }
-    .menu-toggle { display:block; }
-    .nav-links { display:none; position:absolute; top:100%; left:0; right:0; padding:15px 20px; flex-direction:column; align-items:stretch; background:white; border-bottom:1px solid var(--border); box-shadow:0 15px 20px #10274710; }
-    .nav-links.open { display:flex; }
-    .nav-btn { width:100%; text-align:left; }
-    .hero-inner { grid-template-columns:1fr; gap:35px; padding:50px 22px; }
-    .hero-copy { text-align:center; }
-    .hero-description { margin-left:auto; margin-right:auto; }
-    .hero-actions { justify-content:center; }
-    .profile-frame { max-width:340px; }
-    .profile-photo { height:330px; }
-    .about-grid,.contact-panel { grid-template-columns:1fr; }
-    .cards-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    .section { padding:58px 20px; }
+@media(max-width:950px){
+  .navbar{padding:12px 16px}
+  .menu-toggle{display:block}
+  .nav-actions{margin-left:auto}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;padding:14px 18px;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 12px 20px #10274710}
+  .nav-links.open{display:flex}
+  .nav-btn{width:100%;text-align:left}
+  .hero-inner{grid-template-columns:1fr;gap:30px;padding:45px 22px}
+  .hero-copy{text-align:center}
+  .hero-description{margin-left:auto;margin-right:auto}
+  .hero-actions{justify-content:center}
+  .profile-frame{max-width:340px}
+  .profile-photo{height:330px}
+  .about-grid,.contact-panel,.complaint-grid{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section{padding:55px 20px}
 }
-@media(max-width:540px) {
-    .brand-name { font-size:12px; }
-    .brand-subtitle { font-size:8px; }
-    .brand-logo { width:43px; height:43px; }
-    .hero h1 { font-size:39px; }
-    .cards-grid,.detail-list { grid-template-columns:1fr; }
-    .photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
-    .photo-grid img { height:170px; }
-    .contact-panel,.detail-panel { padding:22px; }
+@media(max-width:540px){
+  .brand-name{font-size:11px}
+  .brand-subtitle{font-size:9px}
+  .brand-logo{width:40px;height:40px}
+  .navbar{gap:7px}
+  .lang-btn{padding:8px;font-size:12px}
+  .menu-toggle{padding:6px 10px}
+  .hero h1{font-size:38px}
+  .cards-grid,.detail-list{grid-template-columns:1fr}
+  .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .photo-grid img{height:160px}
+  .contact-panel,.detail-panel,.form-card,.complaint-info{padding:20px}
 }
-@media(prefers-reduced-motion:reduce) {
-    html { scroll-behavior:auto; }
-    *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; }
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
 }
 </style>
 </head>
 
 <body>
 <header class="header">
-    <nav class="navbar" aria-label="Main navigation">
-        <a href="#home" class="brand">
-            <div class="brand-logo">AS</div>
-            <div>
-                <div class="brand-name">DR. ASHISH SHARMA</div>
-                <div class="brand-subtitle">PUBLIC SERVICE PROFILE</div>
-            </div>
-        </a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-        <div class="nav-links" id="navLinks">
-            <a class="nav-btn active" href="#home">Home</a>
-            <a class="nav-btn" href="#about">About</a>
-            <a class="nav-btn" href="#initiatives">Initiatives</a>
-            <a class="nav-btn" href="#gallery">Gallery</a>
-            <a class="nav-btn" href="#contact">Contact</a>
-        </div>
-    </nav>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#home" class="brand">
+      <div class="brand-logo">AS</div>
+      <div>
+        <div class="brand-name">ADV. ASHISH SHARMA</div>
+        <div class="brand-subtitle" data-i18n="brandSubtitle">BLOCK PRAMUKH · KHANDAULI (AGRA)</div>
+      </div>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-btn active" href="#home" data-i18n="navHome">Home</a>
+      <a class="nav-btn" href="#about" data-i18n="navAbout">About</a>
+      <a class="nav-btn" href="#initiatives" data-i18n="navInfo">Information</a>
+      <a class="nav-btn" href="#complaint" data-i18n="navComplaint">Public Complaint</a>
+      <a class="nav-btn" href="#gallery" data-i18n="navGallery">Gallery</a>
+      <a class="nav-btn" href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="lang-btn" id="languageToggle" type="button">हिंदी</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
 </header>
 
 <main>
 <section class="hero" id="home">
-    <div class="hero-inner">
-        <div class="hero-copy">
-            <div class="eyebrow">LEADERSHIP · DEVELOPMENT · PUBLIC SERVICE</div>
-            <h1>Working Towards <span>A Better Tomorrow.</span></h1>
-            <p class="hero-description">A personal profile dedicated to public service, community development and connecting with people.</p>
-            <div class="hero-actions">
-                <a href="#about" class="btn btn-gold">Explore Profile ↗</a>
-                <a href="#contact" class="btn btn-outline">Get in Touch</a>
-            </div>
-            <div class="location">KHANDAULI · AGRA · UTTAR PRADESH</div>
-        </div>
-
-        <div class="profile-frame">
-            <img id="profilePhoto" class="profile-photo" src="./profile.jpg" alt="Dr. Ashish Sharma">
-            <div class="profile-caption">
-                <h2>Dr. Ashish Sharma</h2>
-                <p>Block Pramukh · Khandauli</p>
-            </div>
-        </div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow" data-i18n="eyebrow">LEADERSHIP · DEVELOPMENT · PUBLIC SERVICE</div>
+      <h1 data-i18n="heroTitle">Working Towards <span>A Better Tomorrow.</span></h1>
+      <p class="hero-description" data-i18n="heroDescription">A public service profile focused on community development, public information and connecting with residents of Khandauli.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-gold" data-i18n="exploreButton">Explore Profile ↗</a>
+        <a href="#complaint" class="btn btn-outline" data-i18n="complaintButton">Submit a Complaint</a>
+      </div>
+      <div class="location" data-i18n="location">KHANDAULI · AGRA · UTTAR PRADESH, INDIA</div>
     </div>
+
+    <div class="profile-frame">
+      <!-- Upload your chosen photo to the repository root as profile.png -->
+      <img class="profile-photo" src="./profile.png" alt="Adv. Ashish Sharma" onerror="this.onerror=null;this.src='./image.jpg';">
+      <div class="profile-caption">
+        <h2>Adv. Ashish Sharma</h2>
+        <p data-i18n="roleCaption">Block Pramukh · Khandauli (Agra)</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="about">
-    <div class="section-inner">
-        <span class="section-tag">01 / ABOUT</span>
-        <div class="about-grid">
-            <div class="about-copy">
-                <h2 class="section-title">Leadership with a <span>People-First Approach.</span></h2>
-                <p>Welcome to the personal website of Dr. Ashish Sharma. This platform is designed to share profile information, public initiatives and community-related updates.</p>
-                <p>The goal is to make information easier to access and provide a convenient way for people to get in touch.</p>
-                <a href="#contact" class="btn btn-gold">Contact Now ↗</a>
-            </div>
-            <div class="info-card">
-                <h3>Profile Information</h3>
-                <div class="info-row"><span class="info-icon">✦</span><div><strong>Name</strong><br>Dr. Ashish Sharma</div></div>
-                <div class="info-row"><span class="info-icon">✦</span><div><strong>Role</strong><br>Block Pramukh, Khandauli</div></div>
-                <div class="info-row"><span class="info-icon">✦</span><div><strong>Region</strong><br>Agra, Uttar Pradesh</div></div>
-                <div class="info-row"><span class="info-icon">✦</span><div><strong>Profile</strong><br>Public Service</div></div>
-            </div>
-        </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="aboutTag">01 / ABOUT</span>
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2 class="section-title" data-i18n="aboutTitle">Leadership with a <span>People-First Approach.</span></h2>
+        <p data-i18n="aboutP1">Welcome to the public service website of Adv. Ashish Sharma, Block Pramukh, Khandauli (Agra).</p>
+        <p data-i18n="aboutP2">This website brings together profile details, public information, community development topics and a convenient way for residents to send enquiries or complaints.</p>
+        <p data-i18n="aboutP3">Information about government schemes and services should always be confirmed with the relevant official department.</p>
+        <a href="#contact" class="btn btn-gold" data-i18n="contactButton">Contact Us ↗</a>
+      </div>
+
+      <div class="info-card">
+        <h3 data-i18n="profileInfoTitle">Profile Information</h3>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="nameLabel">Name</strong><br>Adv. Ashish Sharma</div></div>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="designationLabel">Designation</strong><br><span data-i18n="designationValue">Block Pramukh</span></div></div>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="areaLabel">Area</strong><br>Khandauli, Agra</div></div>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="stateLabel">State</strong><br><span data-i18n="stateValue">Uttar Pradesh, India</span></div></div>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="emailLabel">Email</strong><br><a href="mailto:blockpramukhkhandauli@gmail.com">blockpramukhkhandauli@gmail.com</a></div></div>
+        <div class="info-row"><span class="info-icon">✦</span><div><strong data-i18n="purposeLabel">Website Purpose</strong><br><span data-i18n="purposeValue">Public information and communication</span></div></div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="section initiatives-section" id="initiatives">
-    <div class="section-inner">
-        <span class="section-tag">02 / COMMUNITY</span>
-        <h2 class="section-title">Focus <span>Areas</span></h2>
-        <p class="section-intro">Click any card to explore related information and useful guidance.</p>
-        <div class="cards-grid">
-            <button class="initiative-card" type="button" data-topic="rural"><div class="card-icon">🏘️</div><h3>Rural Development</h3><p>Roads, drainage, sanitation and village development information.</p><span class="card-action">Explore Details ↗</span></button>
-            <button class="initiative-card" type="button" data-topic="facilities"><div class="card-icon">💧</div><h3>Public Facilities</h3><p>Water, electricity, cleanliness and essential public services.</p><span class="card-action">Explore Details ↗</span></button>
-            <button class="initiative-card" type="button" data-topic="updates"><div class="card-icon">📢</div><h3>Public Updates</h3><p>Announcements, public notices and community information.</p><span class="card-action">Explore Details ↗</span></button>
-            <button class="initiative-card" type="button" data-topic="community"><div class="card-icon">🤝</div><h3>Community Connect</h3><p>Ways to raise concerns and communicate with the office.</p><span class="card-action">Explore Details ↗</span></button>
-            <button class="initiative-card" type="button" data-topic="schemes"><div class="card-icon">📋</div><h3>Scheme Information</h3><p>Government scheme eligibility and document guidance.</p><span class="card-action">Explore Details ↗</span></button>
-            <button class="initiative-card" type="button" data-topic="contact"><div class="card-icon">☎️</div><h3>Public Contact</h3><p>Contact options and guidance for public enquiries.</p><span class="card-action">Explore Details ↗</span></button>
-        </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="infoTag">02 / INFORMATION CENTRE</span>
+    <h2 class="section-title" data-i18n="infoTitle">Public <span>Information Centre</span></h2>
+    <p class="section-intro" data-i18n="infoIntro">Select a topic to read general information and guidance for residents.</p>
+
+    <div class="cards-grid">
+      <button class="initiative-card" type="button" data-topic="rural">
+        <div class="card-icon">🏘️</div><h3 data-i18n="ruralTitle">Rural Development</h3>
+        <p data-i18n="ruralDesc">Village roads, drainage, sanitation and development-related information.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
+      <button class="initiative-card" type="button" data-topic="facilities">
+        <div class="card-icon">💧</div><h3 data-i18n="facilityTitle">Public Facilities</h3>
+        <p data-i18n="facilityDesc">Water, electricity, cleanliness and essential public services.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
+      <button class="initiative-card" type="button" data-topic="schemes">
+        <div class="card-icon">📋</div><h3 data-i18n="schemeTitle">Government Schemes</h3>
+        <p data-i18n="schemeDesc">General guidance about eligibility, documents and applications.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
+      <button class="initiative-card" type="button" data-topic="education">
+        <div class="card-icon">🎓</div><h3 data-i18n="educationTitle">Education</h3>
+        <p data-i18n="educationDesc">Information about educational facilities and related public concerns.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
+      <button class="initiative-card" type="button" data-topic="health">
+        <div class="card-icon">🏥</div><h3 data-i18n="healthTitle">Health and Sanitation</h3>
+        <p data-i18n="healthDesc">Public health facilities, sanitation and cleanliness information.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
+      <button class="initiative-card" type="button" data-topic="documents">
+        <div class="card-icon">🗂️</div><h3 data-i18n="documentTitle">Documents and Services</h3>
+        <p data-i18n="documentDesc">Where to check official requirements for public services.</p>
+        <span class="card-action" data-i18n="readMore">Read More ↗</span>
+      </button>
     </div>
+  </div>
 </section>
 
 <section class="section details-section" id="details" aria-live="polite">
-    <div class="section-inner">
-        <span class="section-tag">DETAILED INFORMATION</span>
-        <h2 class="section-title" id="detailTitle">Explore <span>Information</span></h2>
-        <p class="section-intro" id="detailIntro"></p>
-        <div class="detail-panel">
-            <div class="detail-list" id="detailList"></div>
-            <div class="detail-actions">
-                <a href="#contact" class="btn btn-gold">Contact Information ↗</a>
-                <button type="button" class="btn btn-dark" id="backToCards">← Back to Focus Areas</button>
-            </div>
-        </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="detailTag">TOPIC DETAILS</span>
+    <h2 class="section-title" id="detailTitle">Information</h2>
+    <p class="section-intro" id="detailIntro"></p>
+    <div class="detail-panel">
+      <div class="detail-list" id="detailList"></div>
+      <div class="detail-actions">
+        <a href="#complaint" class="btn btn-gold" data-i18n="raiseConcern">Raise a Concern ↗</a>
+        <button type="button" class="btn btn-dark" id="backToCards" data-i18n="backButton">← Back to Information</button>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- PHOTO GALLERY -->
-<section class="section" id="gallery">
-    <div class="section-inner">
-        <span class="section-tag">03 / PHOTO GALLERY</span>
-        <h2 class="section-title">Community <span>Gallery</span></h2>
-        <p class="section-intro">Photos of public service and community activities.</p>
-        <div class="photo-grid">
-            <div class="photo-card"><img src="./iso.jpg.jpeg" alt="ISO" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: iso.jpg.jpeg</p><h3>ISO</h3></div>
-            <div class="photo-card"><img src="./janseva.jpg.jpeg" alt="Janseva" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: janseva.jpg.jpeg</p><h3>Janseva</h3></div>
-            <div class="photo-card"><img src="./khanduali.jpg.jpeg" alt="Khandauli" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: khanduali.jpg.jpeg</p><h3>Khandauli</h3></div>
-            <div class="photo-card"><img src="./missionsakti.jpg.jpeg" alt="Mission Shakti" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: missionsakti.jpg.jpeg</p><h3>Mission Shakti</h3></div>
-            <div class="photo-card"><img src="./plant.jpg.jpeg" alt="Plantation" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: plant.jpg.jpeg</p><h3>Plantation</h3></div>
-            <div class="photo-card"><img src="./stadium.jpg.jpeg" alt="Stadium" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: stadium.jpg.jpeg</p><h3>Stadium</h3></div>
-            <div class="photo-card"><img src="./water.jpg.jpeg" alt="Water Service" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: water.jpg.jpeg</p><h3>Water Service</h3></div>
-            <div class="photo-card"><img src="./yogi.jpg.jpeg" alt="Event" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Photo not found: yogi.jpg.jpeg</p><h3>Event</h3></div>
+<section class="section complaint-section" id="complaint">
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="complaintTag">03 / PUBLIC GRIEVANCE</span>
+    <h2 class="section-title" data-i18n="complaintTitle">Public Complaint <span> / जन शिकायत</span></h2>
+    <p class="section-intro" data-i18n="complaintIntro">Use this form to prepare an email about a local issue. Please provide accurate details and do not include passwords, OTPs or other sensitive information.</p>
+
+    <div class="complaint-grid">
+      <form class="form-card" id="complaintForm">
+        <div class="form-group">
+          <label for="fullName" data-i18n="fullNameLabel">Your Full Name *</label>
+          <input id="fullName" name="fullName" type="text" required maxlength="100" autocomplete="name" placeholder="Enter your name">
         </div>
+
+        <div class="form-group">
+          <label for="emailAddress" data-i18n="yourEmailLabel">Your Email (optional)</label>
+          <input id="emailAddress" name="emailAddress" type="email" maxlength="150" autocomplete="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="village" data-i18n="villageLabel">Village / Location *</label>
+          <input id="village" name="village" type="text" required maxlength="150" placeholder="Enter village or location">
+        </div>
+
+        <div class="form-group">
+          <label for="complaintCategory" data-i18n="categoryLabel">Complaint Category *</label>
+          <select id="complaintCategory" name="complaintCategory" required>
+            <option value="" data-i18n="chooseCategory">Select a category</option>
+            <option value="Roads and drainage" data-i18n="catRoads">Roads and drainage</option>
+            <option value="Water supply" data-i18n="catWater">Water supply</option>
+            <option value="Cleanliness and sanitation" data-i18n="catClean">Cleanliness and sanitation</option>
+            <option value="Electricity" data-i18n="catElectricity">Electricity</option>
+            <option value="Government scheme enquiry" data-i18n="catScheme">Government scheme enquiry</option>
+            <option value="Other public issue" data-i18n="catOther">Other public issue</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="complaintDetails" data-i18n="detailsLabel">Complaint Details *</label>
+          <textarea id="complaintDetails" name="complaintDetails" required minlength="10" maxlength="3000" placeholder="Describe the issue, location and relevant details"></textarea>
+        </div>
+
+        <button class="btn btn-gold" type="submit" data-i18n="sendComplaint">Prepare Complaint Email ↗</button>
+        <p class="form-note" data-i18n="formNote">This form opens your email application with the complaint drafted. It does not directly submit or track a complaint.</p>
+      </form>
+
+      <aside class="complaint-info">
+        <h3 data-i18n="beforeSubmitTitle">Before You Submit</h3>
+        <p data-i18n="beforeSubmitText">For faster handling, please provide clear and factual information.</p>
+        <ul>
+          <li data-i18n="tip1">Mention the village and exact public location.</li>
+          <li data-i18n="tip2">Describe the issue and when it occurred.</li>
+          <li data-i18n="tip3">Keep any official acknowledgement or reference number.</li>
+          <li data-i18n="tip4">For urgent emergencies, contact the appropriate emergency service directly.</li>
+        </ul>
+        <p><strong data-i18n="complaintEmailLabel">Complaint email:</strong><br><a href="mailto:blockpramukhkhandauli@gmail.com">blockpramukhkhandauli@gmail.com</a></p>
+      </aside>
     </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="galleryTag">04 / PHOTO GALLERY</span>
+    <h2 class="section-title" data-i18n="galleryTitle">Community <span>Gallery</span></h2>
+    <p class="section-intro" data-i18n="galleryIntro">Photographs of community activities and public events.</p>
+
+    <div class="photo-grid">
+      <div class="photo-card"><img src="./static/iso.jpg" alt="ISO related activity" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/iso.jpg</p><h3 data-i18n="photoIso">ISO</h3></div>
+      <div class="photo-card"><img src="./static/janseva.jpg" alt="Public service activity" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/janseva.jpg</p><h3 data-i18n="photoJanseva">Public Service</h3></div>
+      <div class="photo-card"><img src="./static/khanduali.jpg" alt="Khandauli" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/khanduali.jpg</p><h3 data-i18n="photoKhandauli">Khandauli</h3></div>
+      <div class="photo-card"><img src="./static/missionSakti.jpg" alt="Mission Shakti" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/missionSakti.jpg</p><h3 data-i18n="photoMission">Mission Shakti</h3></div>
+      <div class="photo-card"><img src="./static/plant.jpg" alt="Plantation activity" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/plant.jpg</p><h3 data-i18n="photoPlant">Plantation</h3></div>
+      <div class="photo-card"><img src="./static/stadium.jpg" alt="Stadium" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/stadium.jpg</p><h3 data-i18n="photoStadium">Stadium</h3></div>
+      <div class="photo-card"><img src="./static/water.jpg" alt="Water service" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/water.jpg</p><h3 data-i18n="photoWater">Water Service</h3></div>
+      <div class="photo-card"><img src="./static/yogi.jpg" alt="Public event" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><p class="photo-missing">Image unavailable: static/yogi.jpg</p><h3 data-i18n="photoEvent">Public Event</h3></div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="contact">
-    <div class="section-inner">
-        <span class="section-tag">04 / CONTACT</span>
-        <div class="contact-panel">
-            <div>
-                <h2 class="section-title">Let's Stay <span>Connected.</span></h2>
-                <p>For enquiries and communication, use the contact options provided here.</p>
-                <div class="contact-actions">
-                    <a class="btn btn-gold" href="tel:+919536848951">☎ Call Now</a>
-                    <a class="btn btn-outline" href="https://wa.me/919536848951" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
-                </div>
-            </div>
-            <div class="contact-details">
-                <div class="contact-item"><small>PHONE</small><strong>+91 95368 48951</strong></div>
-                <div class="contact-item"><small>LOCATION</small><strong>Khandauli, Agra, Uttar Pradesh</strong></div>
-                <div class="contact-item"><small>PROFILE</small><strong>Dr. Ashish Sharma · Public Service</strong></div>
-            </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="contactTag">05 / CONTACT</span>
+    <div class="contact-panel">
+      <div>
+        <h2 class="section-title" data-i18n="contactTitle">Let's Stay <span>Connected.</span></h2>
+        <p data-i18n="contactIntro">For public enquiries and communication, please use the email address below.</p>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="mailto:blockpramukhkhandauli@gmail.com" data-i18n="emailButton">Email Us ↗</a>
+          <a class="btn btn-outline" href="#complaint" data-i18n="complaintButton">Submit a Complaint</a>
         </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-item"><small data-i18n="contactEmailLabel">EMAIL</small><strong><a href="mailto:blockpramukhkhandauli@gmail.com">blockpramukhkhandauli@gmail.com</a></strong></div>
+        <div class="contact-item"><small data-i18n="contactLocationLabel">LOCATION</small><strong>Khandauli, Agra, Uttar Pradesh, India</strong></div>
+        <div class="contact-item"><small data-i18n="contactNameLabel">NAME AND DESIGNATION</small><strong>Adv. Ashish Sharma · Block Pramukh</strong></div>
+      </div>
     </div>
+  </div>
 </section>
 </main>
 
 <footer class="footer">
-    <p>© <span id="year"></span> Dr. Ashish Sharma · Public Service Profile</p>
-    <p>Designed for accessible community information.</p>
+  <p>© <span id="year"></span> Adv. Ashish Sharma · <span data-i18n="footerRole">Block Pramukh, Khandauli (Agra)</span></p>
+  <p data-i18n="footerNote">Public information and community communication website.</p>
 </footer>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.getElementById("navLinks");
-    const menuToggle = document.getElementById("menuToggle");
-    const navButtons = document.querySelectorAll(".nav-btn");
-    const detailSection = document.getElementById("details");
-    const detailTitle = document.getElementById("detailTitle");
-    const detailIntro = document.getElementById("detailIntro");
-    const detailList = document.getElementById("detailList");
-    const backToCards = document.getElementById("backToCards");
-    const cards = document.querySelectorAll(".initiative-card");
+  const navLinks = document.getElementById("navLinks");
+  const menuToggle = document.getElementById("menuToggle");
+  const languageToggle = document.getElementById("languageToggle");
+  const navButtons = document.querySelectorAll(".nav-btn");
+  const detailSection = document.getElementById("details");
+  const detailTitle = document.getElementById("detailTitle");
+  const detailIntro = document.getElementById("detailIntro");
+  const detailList = document.getElementById("detailList");
+  const cards = document.querySelectorAll(".initiative-card");
+  let currentLanguage = "en";
 
-    document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Use a fallback photo if the primary profile photo cannot load.
-    document.getElementById("profilePhoto").addEventListener("error", function () {
-        if (!this.dataset.fallbackUsed) {
-            this.dataset.fallbackUsed = "1";
-            this.src = "./image.jpg";
-        } else {
-            this.alt = "Profile photo could not be loaded";
-            this.style.objectFit = "contain";
-        }
+  const translations = {
+    en: {
+      brandSubtitle:"BLOCK PRAMUKH · KHANDAULI (AGRA)",
+      navHome:"Home",navAbout:"About",navInfo:"Information",
+      navComplaint:"Public Complaint",navGallery:"Gallery",navContact:"Contact",
+      eyebrow:"LEADERSHIP · DEVELOPMENT · PUBLIC SERVICE",
+      heroTitle:'Working Towards <span>A Better Tomorrow.</span>',
+      heroDescription:"A public service profile focused on community development, public information and connecting with residents of Khandauli.",
+      exploreButton:"Explore Profile ↗",complaintButton:"Submit a Complaint",
+      location:"KHANDAULI · AGRA · UTTAR PRADESH, INDIA",
+      roleCaption:"Block Pramukh · Khandauli (Agra)",
+      aboutTag:"01 / ABOUT",
+      aboutTitle:'Leadership with a <span>People-First Approach.</span>',
+      aboutP1:"Welcome to the public service website of Adv. Ashish Sharma, Block Pramukh, Khandauli (Agra).",
+      aboutP2:"This website brings together profile details, public information, community development topics and a convenient way for residents to send enquiries or complaints.",
+      aboutP3:"Information about government schemes and services should always be confirmed with the relevant official department.",
+      contactButton:"Contact Us ↗",profileInfoTitle:"Profile Information",nameLabel:"Name",
+      designationLabel:"Designation",designationValue:"Block Pramukh",areaLabel:"Area",
+      stateLabel:"State",stateValue:"Uttar Pradesh, India",emailLabel:"Email",
+      purposeLabel:"Website Purpose",purposeValue:"Public information and communication",
+      infoTag:"02 / INFORMATION CENTRE",infoTitle:'Public <span>Information Centre</span>',
+      infoIntro:"Select a topic to read general information and guidance for residents.",
+      ruralTitle:"Rural Development",ruralDesc:"Village roads, drainage, sanitation and development-related information.",
+      facilityTitle:"Public Facilities",facilityDesc:"Water, electricity, cleanliness and essential public services.",
+      schemeTitle:"Government Schemes",schemeDesc:"General guidance about eligibility, documents and applications.",
+      educationTitle:"Education",educationDesc:"Information about educational facilities and related public concerns.",
+      healthTitle:"Health and Sanitation",healthDesc:"Public health facilities, sanitation and cleanliness information.",
+      documentTitle:"Documents and Services",documentDesc:"Where to check official requirements for public services.",
+      readMore:"Read More ↗",detailTag:"TOPIC DETAILS",raiseConcern:"Raise a Concern ↗",
+      backButton:"← Back to Information",complaintTag:"03 / PUBLIC GRIEVANCE",
+      complaintTitle:'Public Complaint <span> / जन शिकायत</span>',
+      complaintIntro:"Use this form to prepare an email about a local issue. Please provide accurate details and do not include passwords, OTPs or other sensitive information.",
+      fullNameLabel:"Your Full Name *",yourEmailLabel:"Your Email (optional)",
+      villageLabel:"Village / Location *",categoryLabel:"Complaint Category *",
+      chooseCategory:"Select a category",catRoads:"Roads and drainage",
+      catWater:"Water supply",catClean:"Cleanliness and sanitation",
+      catElectricity:"Electricity",catScheme:"Government scheme enquiry",
+      catOther:"Other public issue",detailsLabel:"Complaint Details *",
+      sendComplaint:"Prepare Complaint Email ↗",
+      formNote:"This form opens your email application with the complaint drafted. It does not directly submit or track a complaint.",
+      beforeSubmitTitle:"Before You Submit",beforeSubmitText:"For faster handling, please provide clear and factual information.",
+      tip1:"Mention the village and exact public location.",
+      tip2:"Describe the issue and when it occurred.",
+      tip3:"Keep any official acknowledgement or reference number.",
+      tip4:"For urgent emergencies, contact the appropriate emergency service directly.",
+      complaintEmailLabel:"Complaint email:",galleryTag:"04 / PHOTO GALLERY",
+      galleryTitle:'Community <span>Gallery</span>',
+      galleryIntro:"Photographs of community activities and public events.",
+      photoIso:"ISO",photoJanseva:"Public Service",photoKhandauli:"Khandauli",
+      photoMission:"Mission Shakti",photoPlant:"Plantation",photoStadium:"Stadium",
+      photoWater:"Water Service",photoEvent:"Public Event",contactTag:"05 / CONTACT",
+      contactTitle:'Let’s Stay <span>Connected.</span>',
+      contactIntro:"For public enquiries and communication, please use the email address below.",
+      emailButton:"Email Us ↗",contactEmailLabel:"EMAIL",
+      contactLocationLabel:"LOCATION",contactNameLabel:"NAME AND DESIGNATION",
+      footerRole:"Block Pramukh, Khandauli (Agra)",
+      footerNote:"Public information and community communication website.",
+      formPlaceholderName:"Enter your name",
+      formPlaceholderEmail:"you@example.com",
+      formPlaceholderVillage:"Enter village or location",
+      formPlaceholderDetails:"Describe the issue, location and relevant details",
+      requiredAlert:"Please complete all required fields correctly."
+    },
+    hi: {
+      brandSubtitle:"ब्लॉक प्रमुख · खंदौली (आगरा)",
+      navHome:"होम",navAbout:"परिचय",navInfo:"जानकारी",
+      navComplaint:"जन शिकायत",navGallery:"फोटो गैलरी",navContact:"संपर्क",
+      eyebrow:"नेतृत्व · विकास · जनसेवा",
+      heroTitle:'बेहतर कल के लिए <span>निरंतर प्रयास।</span>',
+      heroDescription:"खंदौली के नागरिकों से जुड़ने, जनसेवा, सार्वजनिक जानकारी और क्षेत्र के विकास से संबंधित जानकारी के लिए यह वेबसाइट बनाई गई है।",
+      exploreButton:"परिचय देखें ↗",complaintButton:"शिकायत दर्ज करें",
+      location:"खंदौली · आगरा · उत्तर प्रदेश, भारत",
+      roleCaption:"ब्लॉक प्रमुख · खंदौली (आगरा)",
+      aboutTag:"01 / परिचय",
+      aboutTitle:'जनता को प्राथमिकता देने वाला <span>नेतृत्व।</span>',
+      aboutP1:"Adv. Ashish Sharma, ब्लॉक प्रमुख, खंदौली (आगरा) की जनसेवा वेबसाइट पर आपका स्वागत है।",
+      aboutP2:"इस वेबसाइट पर परिचय, सार्वजनिक जानकारी, क्षेत्रीय विकास से जुड़े विषय और नागरिकों के लिए संपर्क तथा शिकायत भेजने की सुविधा उपलब्ध है।",
+      aboutP3:"सरकारी योजनाओं और सेवाओं की जानकारी संबंधित आधिकारिक विभाग से अवश्य सत्यापित करें।",
+      contactButton:"संपर्क करें ↗",profileInfoTitle:"परिचय संबंधी जानकारी",nameLabel:"नाम",
+      designationLabel:"पद",designationValue:"ब्लॉक प्रमुख",areaLabel:"क्षेत्र",
+      stateLabel:"राज्य",stateValue:"उत्तर प्रदेश, भारत",emailLabel:"ईमेल",
+      purposeLabel:"वेबसाइट का उद्देश्य",purposeValue:"जन जानकारी और संवाद",
+      infoTag:"02 / सूचना केंद्र",infoTitle:'जनता के लिए <span>सूचना केंद्र</span>',
+      infoIntro:"नागरिकों के लिए सामान्य जानकारी और मार्गदर्शन पढ़ने हेतु कोई विषय चुनें।",
+      ruralTitle:"ग्रामीण विकास",ruralDesc:"गांव की सड़कें, नालियां, स्वच्छता और विकास संबंधी जानकारी।",
+      facilityTitle:"सार्वजनिक सुविधाएं",facilityDesc:"पानी, बिजली, स्वच्छता और आवश्यक जनसेवाएं।",
+      schemeTitle:"सरकारी योजनाएं",schemeDesc:"पात्रता, दस्तावेज और आवेदन संबंधी सामान्य जानकारी।",
+      educationTitle:"शिक्षा",educationDesc:"शिक्षा सुविधाओं और उनसे संबंधित सार्वजनिक समस्याओं की जानकारी।",
+      healthTitle:"स्वास्थ्य और स्वच्छता",healthDesc:"सार्वजनिक स्वास्थ्य सुविधाएं, स्वच्छता और सफाई की जानकारी।",
+      documentTitle:"दस्तावेज और सेवाएं",documentDesc:"जनसेवाओं की आधिकारिक आवश्यकताओं की जानकारी कहां देखें।",
+      readMore:"विस्तार से जानें ↗",detailTag:"विषय की जानकारी",raiseConcern:"समस्या बताएं ↗",
+      backButton:"← जानकारी पर वापस जाएं",complaintTag:"03 / जन शिकायत",
+      complaintTitle:'जन शिकायत <span> / Public Complaint</span>',
+      complaintIntro:"स्थानीय समस्या के संबंध में ईमेल तैयार करने के लिए यह फॉर्म भरें। सही जानकारी दें और पासवर्ड, OTP या अन्य संवेदनशील जानकारी न लिखें।",
+      fullNameLabel:"आपका पूरा नाम *",yourEmailLabel:"आपका ईमेल (वैकल्पिक)",
+      villageLabel:"गांव / स्थान *",categoryLabel:"शिकायत की श्रेणी *",
+      chooseCategory:"श्रेणी चुनें",catRoads:"सड़क और नाली",
+      catWater:"पानी की आपूर्ति",catClean:"सफाई और स्वच्छता",
+      catElectricity:"बिजली",catScheme:"सरकारी योजना संबंधी जानकारी",
+      catOther:"अन्य सार्वजनिक समस्या",detailsLabel:"शिकायत का विवरण *",
+      sendComplaint:"शिकायत का ईमेल तैयार करें ↗",
+      formNote:"यह फॉर्म आपके ईमेल ऐप में शिकायत का मसौदा खोलेगा। शिकायत सीधे जमा या ट्रैक नहीं होती।",
+      beforeSubmitTitle:"शिकायत भेजने से पहले",beforeSubmitText:"समस्या का स्पष्ट और तथ्यात्मक विवरण दें ताकि उसे समझना आसान हो।",
+      tip1:"गांव और समस्या का सही स्थान लिखें।",
+      tip2:"समस्या क्या है और कब हुई, यह बताएं।",
+      tip3:"शिकायत की पावती या संदर्भ संख्या सुरक्षित रखें।",
+      tip4:"आपातकाल में संबंधित आपातकालीन सेवा से सीधे संपर्क करें।",
+      complaintEmailLabel:"शिकायत ईमेल:",galleryTag:"04 / फोटो गैलरी",
+      galleryTitle:'जनसेवा की <span>फोटो गैलरी</span>',
+      galleryIntro:"सामुदायिक गतिविधियों और सार्वजनिक कार्यक्रमों की तस्वीरें।",
+      photoIso:"ISO",photoJanseva:"जनसेवा",photoKhandauli:"खंदौली",
+      photoMission:"मिशन शक्ति",photoPlant:"पौधारोपण",photoStadium:"स्टेडियम",
+      photoWater:"जल सेवा",photoEvent:"सार्वजनिक कार्यक्रम",contactTag:"05 / संपर्क",
+      contactTitle:'आइए <span>जुड़े रहें।</span>',
+      contactIntro:"जनसंपर्क और पूछताछ के लिए नीचे दिए गए ईमेल पते का उपयोग करें।",
+      emailButton:"ईमेल करें ↗",contactEmailLabel:"ईमेल",
+      contactLocationLabel:"स्थान",contactNameLabel:"नाम और पद",
+      footerRole:"ब्लॉक प्रमुख, खंदौली (आगरा)",
+      footerNote:"जन जानकारी और सामुदायिक संवाद के लिए वेबसाइट।",
+      formPlaceholderName:"अपना नाम लिखें",
+      formPlaceholderEmail:"you@example.com",
+      formPlaceholderVillage:"गांव या स्थान लिखें",
+      formPlaceholderDetails:"समस्या, स्थान और संबंधित विवरण लिखें",
+      requiredAlert:"कृपया सभी आवश्यक फ़ील्ड सही तरीके से भरें।"
+    }
+  };
+
+  const information = {
+    rural:{
+      en:{title:"Rural Development",intro:"General guidance about village development and local infrastructure.",points:[
+        ["Roads and Infrastructure","Note the affected road or public location and describe the issue clearly."],
+        ["Drainage and Sanitation","Record the location and explain the drainage or sanitation concern."],
+        ["Development Information","Confirm project details and progress with the relevant official department."],
+        ["Raise a Concern","Use the public complaint form to prepare an email about the issue."]
+      ]},
+      hi:{title:"ग्रामीण विकास",intro:"गांव के विकास और स्थानीय बुनियादी सुविधाओं से संबंधित सामान्य मार्गदर्शन।",points:[
+        ["सड़क और बुनियादी सुविधाएं","प्रभावित सड़क या सार्वजनिक स्थान का नाम लिखें और समस्या स्पष्ट बताएं।"],
+        ["नाली और स्वच्छता","स्थान लिखकर नाली या स्वच्छता से जुड़ी समस्या का विवरण दें।"],
+        ["विकास कार्य की जानकारी","परियोजना और उसकी प्रगति की पुष्टि संबंधित आधिकारिक विभाग से करें।"],
+        ["समस्या बताएं","समस्या के बारे में ईमेल तैयार करने के लिए जन शिकायत फॉर्म का उपयोग करें।"]
+      ]}
+    },
+    facilities:{
+      en:{title:"Public Facilities",intro:"Guidance for common public service concerns.",points:[
+        ["Water Supply","Mention the affected area and the nature of the water supply issue."],
+        ["Electricity","For power-related complaints, contact the relevant electricity provider."],
+        ["Cleanliness","Identify the location and explain the sanitation or waste issue."],
+        ["Public Infrastructure","Report the issue to the authority responsible for that facility."]
+      ]},
+      hi:{title:"सार्वजनिक सुविधाएं",intro:"आम जन सुविधाओं से जुड़ी समस्याओं के लिए मार्गदर्शन।",points:[
+        ["पानी की आपूर्ति","प्रभावित क्षेत्र और पानी की समस्या का विवरण लिखें।"],
+        ["बिजली","बिजली संबंधी शिकायत के लिए संबंधित बिजली विभाग से संपर्क करें।"],
+        ["सफाई","स्थान बताएं और सफाई या कचरे से जुड़ी समस्या समझाएं।"],
+        ["सार्वजनिक बुनियादी सुविधाएं","संबंधित सुविधा के लिए जिम्मेदार विभाग को समस्या बताएं।"]
+      ]}
+    },
+    schemes:{
+      en:{title:"Government Schemes",intro:"Check current scheme information through official sources.",points:[
+        ["Eligibility","Confirm current eligibility rules on the official scheme portal."],
+        ["Required Documents","Review the official document checklist before applying."],
+        ["Application Process","Follow the official online or in-person application procedure."],
+        ["Avoid Fraud","Never share your OTP, PIN or password with unknown people."]
+      ]},
+      hi:{title:"सरकारी योजनाएं",intro:"सरकारी योजनाओं की वर्तमान जानकारी आधिकारिक स्रोतों से जांचें।",points:[
+        ["पात्रता","योजना की पात्रता संबंधी वर्तमान नियम आधिकारिक पोर्टल पर जांचें।"],
+        ["आवश्यक दस्तावेज","आवेदन से पहले आधिकारिक दस्तावेज सूची देखें।"],
+        ["आवेदन प्रक्रिया","आधिकारिक ऑनलाइन या कार्यालय में आवेदन की प्रक्रिया अपनाएं।"],
+        ["धोखाधड़ी से बचें","अपना OTP, PIN या पासवर्ड किसी अनजान व्यक्ति को न बताएं।"]
+      ]}
+    },
+    education:{
+      en:{title:"Education",intro:"General information about educational facilities and related concerns.",points:[
+        ["School Facilities","Describe the school or facility and the issue requiring attention."],
+        ["Student Support","Check current eligibility and application details with the relevant department."],
+        ["Public Education Information","Rely on official education department notices for verified information."],
+        ["Raise a Concern","Provide the location and factual details through the complaint form."]
+      ]},
+      hi:{title:"शिक्षा",intro:"शिक्षा सुविधाओं और उनसे जुड़ी समस्याओं की सामान्य जानकारी।",points:[
+        ["विद्यालय की सुविधाएं","विद्यालय या सुविधा का नाम और समस्या का विवरण दें।"],
+        ["विद्यार्थी सहायता","संबंधित विभाग से पात्रता और आवेदन की जानकारी जांचें।"],
+        ["शिक्षा संबंधी सूचना","सत्यापित जानकारी के लिए शिक्षा विभाग की आधिकारिक सूचनाएं देखें।"],
+        ["समस्या बताएं","शिकायत फॉर्म में स्थान और सही विवरण लिखें।"]
+      ]}
+    },
+    health:{
+      en:{title:"Health and Sanitation",intro:"Guidance about public health facilities and cleanliness concerns.",points:[
+        ["Health Facilities","For medical assistance, contact an appropriate healthcare provider."],
+        ["Sanitation","Identify the location and describe the public sanitation concern."],
+        ["Cleanliness","Report waste or cleanliness issues to the responsible local authority."],
+        ["Urgent Health Needs","For emergencies, contact emergency services or a healthcare professional."]
+      ]},
+      hi:{title:"स्वास्थ्य और स्वच्छता",intro:"सार्वजनिक स्वास्थ्य सुविधाओं और सफाई संबंधी समस्याओं के लिए मार्गदर्शन।",points:[
+        ["स्वास्थ्य सुविधाएं","चिकित्सा सहायता के लिए उपयुक्त स्वास्थ्य सेवा प्रदाता से संपर्क करें।"],
+        ["स्वच्छता","स्थान बताएं और सार्वजनिक स्वच्छता संबंधी समस्या का विवरण दें।"],
+        ["सफाई","कचरे या सफाई की समस्या संबंधित स्थानीय प्राधिकरण को बताएं।"],
+        ["तत्काल स्वास्थ्य सहायता","आपात स्थिति में आपातकालीन सेवा या स्वास्थ्य विशेषज्ञ से संपर्क करें।"]
+      ]}
+    },
+    documents:{
+      en:{title:"Documents and Services",intro:"Use official sources to verify public service requirements.",points:[
+        ["Document Checklist","Requirements differ by service; check the relevant official website."],
+        ["Applications","Use the official application form and submission process."],
+        ["Application Status","Keep your acknowledgement or reference number for follow-up."],
+        ["Personal Information","Share personal documents only through trusted, official channels."]
+      ]},
+      hi:{title:"दस्तावेज और सेवाएं",intro:"जनसेवाओं की आवश्यकताओं की पुष्टि आधिकारिक स्रोतों से करें।",points:[
+        ["दस्तावेज सूची","हर सेवा की आवश्यकताएं अलग हो सकती हैं; संबंधित आधिकारिक वेबसाइट देखें।"],
+        ["आवेदन","आधिकारिक आवेदन फॉर्म और जमा करने की प्रक्रिया अपनाएं।"],
+        ["आवेदन की स्थिति","आगे जानकारी लेने के लिए पावती या संदर्भ संख्या सुरक्षित रखें।"],
+        ["निजी जानकारी","व्यक्तिगत दस्तावेज केवल विश्वसनीय आधिकारिक माध्यमों से साझा करें।"]
+      ]}
+    }
+  };
+
+  function applyLanguage(language) {
+    currentLanguage = language;
+    document.documentElement.lang = language === "hi" ? "hi" : "en";
+
+    document.querySelectorAll("[data-i18n]").forEach(function (element) {
+      const key = element.getAttribute("data-i18n");
+      const value = translations[language][key];
+      if (value !== undefined) element.innerHTML = value;
     });
 
-    const information = {
-        rural: {
-            title:"Rural Development",
-            intro:"Explore information about village infrastructure and rural development.",
-            points:[
-                ["Roads and Infrastructure","Find verified information about village roads, drainage and public infrastructure projects."],
-                ["Water and Sanitation","Learn about drinking water facilities, sanitation services and cleanliness initiatives."],
-                ["Development Work","Look for publicly available project details and progress reports from the relevant department."],
-                ["Report a Local Issue","Describe the location and problem, then contact the appropriate local authority."]
-            ]
-        },
-        facilities: {
-            title:"Public Facilities",
-            intro:"Guidance for essential public services and common local concerns.",
-            points:[
-                ["Water Supply","Note the affected location and contact the responsible local authority."],
-                ["Electricity Services","Use the official electricity provider's complaint channel."],
-                ["Cleanliness and Waste","Report the location and details to the responsible local body."],
-                ["Public Infrastructure","Report damaged public facilities to the appropriate department."]
-            ]
-        },
-        updates: {
-            title:"Public Updates",
-            intro:"Find and share verified community announcements.",
-            points:[
-                ["Official Notices","Check notices published by the relevant government department."],
-                ["Community Events","Event information should include the confirmed date, location and organiser."],
-                ["Public Announcements","Verify the source and publication date before sharing."],
-                ["Important Alerts","Follow instructions from the appropriate official authority."]
-            ]
-        },
-        community: {
-            title:"Community Connect",
-            intro:"Guidance to help residents communicate concerns clearly.",
-            points:[
-                ["Prepare Your Complaint","Describe the problem, location and date."],
-                ["Contact the Right Office","Choose the authority responsible for the issue."],
-                ["Keep a Record","Save your complaint reference number or acknowledgement."],
-                ["Follow Up","Use the responsible authority's official procedure."]
-            ]
-        },
-        schemes: {
-            title:"Scheme Information",
-            intro:"Check government schemes and their official application requirements.",
-            points:[
-                ["Eligibility Criteria","Confirm current eligibility rules on the official portal."],
-                ["Required Documents","Check the scheme-specific document checklist before applying."],
-                ["Application Process","Follow the official online or in-person application instructions."],
-                ["Avoid Fraud","Never share your OTP, PIN or password with an unknown person."]
-            ]
-        },
-        contact: {
-            title:"Public Contact",
-            intro:"Use the available contact options for enquiries and communication.",
-            points:[
-                ["Telephone","Listed number: +91 95368 48951. Confirm it is authorised for public enquiries."],
-                ["WhatsApp","Use this option if the listed number accepts public enquiries."],
-                ["Location","Khandauli, Agra, Uttar Pradesh."],
-                ["When Contacting","Explain your query clearly and avoid sending sensitive information unnecessarily."]
-            ]
-        }
-    };
+    languageToggle.textContent = language === "en" ? "हिंदी" : "English";
 
-    function setActiveButton(sectionId) {
-        navButtons.forEach(function (button) {
-            const active = button.getAttribute("href") === "#" + sectionId;
-            button.classList.toggle("active", active);
-            if (active) button.setAttribute("aria-current", "location");
-            else button.removeAttribute("aria-current");
-        });
+    document.getElementById("fullName").placeholder = translations[language].formPlaceholderName;
+    document.getElementById("emailAddress").placeholder = translations[language].formPlaceholderEmail;
+    document.getElementById("village").placeholder = translations[language].formPlaceholderVillage;
+    document.getElementById("complaintDetails").placeholder = translations[language].formPlaceholderDetails;
+
+    if (detailSection.classList.contains("show") && selectedTopic) {
+      renderDetails(selectedTopic);
     }
+  }
 
+  languageToggle.addEventListener("click", function () {
+    applyLanguage(currentLanguage === "en" ? "hi" : "en");
+  });
+
+  menuToggle.addEventListener("click", function () {
+    const opened = navLinks.classList.toggle("open");
+    menuToggle.textContent = opened ? "✕" : "☰";
+    menuToggle.setAttribute("aria-expanded", String(opened));
+  });
+
+  function setActiveButton(sectionId) {
     navButtons.forEach(function (button) {
-        button.addEventListener("click", function (event) {
-            const id = button.getAttribute("href").substring(1);
-            const target = document.getElementById(id);
-            if (!target) return;
-            event.preventDefault();
-            target.scrollIntoView({behavior:"smooth",block:"start"});
-            setActiveButton(id);
-            history.replaceState(null, "", "#" + id);
-            navLinks.classList.remove("open");
-            menuToggle.textContent = "☰";
-            menuToggle.setAttribute("aria-expanded", "false");
-        });
+      const active = button.getAttribute("href") === "#" + sectionId;
+      button.classList.toggle("active", active);
+      if (active) button.setAttribute("aria-current", "location");
+      else button.removeAttribute("aria-current");
     });
+  }
 
-    menuToggle.addEventListener("click", function () {
-        const opened = navLinks.classList.toggle("open");
-        menuToggle.textContent = opened ? "✕" : "☰";
-        menuToggle.setAttribute("aria-expanded", String(opened));
+  navButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button.getAttribute("href").slice(1));
+      navLinks.classList.remove("open");
+      menuToggle.textContent = "☰";
+      menuToggle.setAttribute("aria-expanded", "false");
     });
+  });
 
-    cards.forEach(function (card) {
-        card.addEventListener("click", function () {
-            const data = information[card.dataset.topic];
-            if (!data) return;
+  let selectedTopic = null;
 
-            detailTitle.textContent = data.title;
-            detailIntro.textContent = data.intro;
-            detailList.replaceChildren();
+  function renderDetails(topic) {
+    const data = information[topic][currentLanguage];
+    detailTitle.textContent = data.title;
+    detailIntro.textContent = data.intro;
+    detailList.replaceChildren();
 
-            cards.forEach(function (item) { item.classList.remove("selected"); });
-            card.classList.add("selected");
-
-            data.points.forEach(function (point) {
-                const article = document.createElement("article");
-                article.className = "detail-item";
-                const heading = document.createElement("h3");
-                heading.textContent = point[0];
-                const paragraph = document.createElement("p");
-                paragraph.textContent = point[1];
-                article.append(heading, paragraph);
-                detailList.appendChild(article);
-            });
-
-            detailSection.classList.add("show");
-            history.replaceState(null, "", "#details");
-            detailSection.scrollIntoView({behavior:"smooth",block:"start"});
-        });
+    data.points.forEach(function (point) {
+      const article = document.createElement("article");
+      article.className = "detail-item";
+      const heading = document.createElement("h3");
+      heading.textContent = point[0];
+      const paragraph = document.createElement("p");
+      paragraph.textContent = point[1];
+      article.append(heading, paragraph);
+      detailList.appendChild(article);
     });
+  }
 
-    backToCards.addEventListener("click", function () {
-        document.getElementById("initiatives").scrollIntoView({behavior:"smooth",block:"start"});
+  cards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      const topic = card.dataset.topic;
+      if (!information[topic]) return;
+
+      selectedTopic = topic;
+      renderDetails(topic);
+      detailSection.classList.add("show");
+      detailSection.scrollIntoView({behavior:"smooth",block:"start"});
     });
+  });
 
-    if ("IntersectionObserver" in window) {
-        const sections = document.querySelectorAll("main section[id]:not(#details)");
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) setActiveButton(entry.target.id);
-            });
-        }, {rootMargin:"-20% 0px -65% 0px",threshold:0});
-        sections.forEach(function (section) { observer.observe(section); });
+  document.getElementById("backToCards").addEventListener("click", function () {
+    document.getElementById("initiatives").scrollIntoView({behavior:"smooth",block:"start"});
+  });
+
+  document.getElementById("complaintForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+
+    if (!form.reportValidity()) {
+      alert(translations[currentLanguage].requiredAlert);
+      return;
     }
+
+    const name = document.getElementById("fullName").value.trim();
+    const senderEmail = document.getElementById("emailAddress").value.trim();
+    const village = document.getElementById("village").value.trim();
+    const categorySelect = document.getElementById("complaintCategory");
+    const category = categorySelect.options[categorySelect.selectedIndex].text;
+    const details = document.getElementById("complaintDetails").value.trim();
+
+    const subject = (currentLanguage === "hi" ? "जन शिकायत: " : "Public Complaint: ") + category;
+    const body = [
+      (currentLanguage === "hi" ? "नाम: " : "Name: ") + name,
+      (currentLanguage === "hi" ? "ईमेल: " : "Email: ") + (senderEmail || (currentLanguage === "hi" ? "नहीं दिया गया" : "Not provided")),
+      (currentLanguage === "hi" ? "गांव / स्थान: " : "Village / Location: ") + village,
+      (currentLanguage === "hi" ? "श्रेणी: " : "Category: ") + category,
+      "",
+      (currentLanguage === "hi" ? "शिकायत का विवरण:" : "Complaint details:"),
+      details
+    ].join("\n");
+
+    const mailto = "mailto:blockpramukhkhandauli@gmail.com"
+      + "?subject=" + encodeURIComponent(subject)
+      + "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailto;
+  });
+
+  if ("IntersectionObserver" in window) {
+    const sections = document.querySelectorAll("main section[id]:not(#details)");
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActiveButton(entry.target.id);
+      });
+    }, {rootMargin:"-20% 0px -65% 0px",threshold:0});
+    sections.forEach(function (section) { observer.observe(section); });
+  }
+
+  applyLanguage("en");
 });
 </script>
 </body>

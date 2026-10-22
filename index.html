@@ -1,1262 +1,350 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b1930">
-    <title>Dr. Ashish Sharma | Public Service Profile</title>
-
-    <style>
-        :root {
-            --navy: #0b1930;
-            --blue: #173c63;
-            --gold: #e5b35b;
-            --light: #f3f6fb;
-            --muted: #657187;
-            --white: #ffffff;
-            --border: #e3e9f2;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 100px;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--navy);
-            line-height: 1.7;
-            background: white;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button {
-            font: inherit;
-            cursor: pointer;
-        }
-
-        section[id] {
-            scroll-margin-top: 100px;
-        }
-
-        /* HEADER AND NAVIGATION */
-
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,.97);
-            border-bottom: 1px solid var(--border);
-            backdrop-filter: blur(12px);
-        }
-
-        .navbar {
-            max-width: 1250px;
-            min-height: 82px;
-            padding: 12px 24px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .brand-logo {
-            width: 52px;
-            height: 52px;
-            display: grid;
-            place-items: center;
-            border-radius: 16px;
-            background: linear-gradient(135deg, var(--gold), #ffe8ae);
-            font-weight: 900;
-            font-size: 18px;
-        }
-
-        .brand-name {
-            font-size: 15px;
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-
-        .brand-subtitle {
-            font-size: 10px;
-            font-weight: bold;
-            letter-spacing: 1.4px;
-            color: var(--muted);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .nav-btn {
-            display: inline-block;
-            padding: 11px 16px;
-            border: 1px solid transparent;
-            border-radius: 13px;
-            color: #35435a;
-            background: transparent;
-            font-size: 14px;
-            font-weight: bold;
-            transition: all .25s ease;
-        }
-
-        .nav-btn:hover {
-            background: #eef2f8;
-            transform: translateY(-2px);
-        }
-
-        .nav-btn.active {
-            background: var(--navy);
-            color: white;
-            border-color: var(--gold);
-            transform: scale(1.06);
-            box-shadow: 0 7px 20px #0b19302b;
-        }
-
-        .menu-toggle {
-            display: none;
-            padding: 7px 13px;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            background: white;
-            color: var(--navy);
-            font-size: 23px;
-        }
-
-        /* HERO SECTION */
-
-        .hero {
-            color: white;
-            background:
-                radial-gradient(circle at 85% 20%, #285783, transparent 35%),
-                linear-gradient(125deg, #09162a, #173b60);
-        }
-
-        .hero-inner {
-            max-width: 1250px;
-            min-height: 540px;
-            padding: 65px 25px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1.2fr .8fr;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .eyebrow {
-            margin-bottom: 20px;
-            color: var(--gold);
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .hero h1 {
-            margin-bottom: 22px;
-            font-family: Georgia, serif;
-            font-size: clamp(38px, 5vw, 68px);
-            line-height: 1.13;
-        }
-
-        .hero h1 span {
-            display: block;
-            color: var(--gold);
-        }
-
-        .hero-description {
-            max-width: 600px;
-            margin-bottom: 24px;
-            color: #dbe6f3;
-        }
-
-        .hero-actions,
-        .contact-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 22px;
-        }
-
-        .btn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 12px 20px;
-            border: 1px solid transparent;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 14px;
-            transition: transform .25s, box-shadow .25s;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px #0002;
-        }
-
-        .btn-gold {
-            background: var(--gold);
-            color: var(--navy);
-        }
-
-        .btn-outline {
-            border-color: #ffffff80;
-            color: white;
-            background: transparent;
-        }
-
-        .location {
-            color: #c9d8e9;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-
-        .profile-frame {
-            max-width: 380px;
-            width: 100%;
-            padding: 12px;
-            margin: auto;
-            border: 1px solid #e5b35b88;
-            border-radius: 26px;
-            background: #ffffff0d;
-            box-shadow: 0 25px 60px #0004;
-        }
-
-        .profile-photo {
-            width: 100%;
-            height: 365px;
-            display: block;
-            object-fit: cover;
-            object-position: center top;
-            border-radius: 19px;
-            background: #e4eaf2;
-        }
-
-        .profile-caption {
-            padding: 14px 8px 7px;
-            text-align: center;
-        }
-
-        .profile-caption h2 {
-            font-size: 20px;
-        }
-
-        .profile-caption p {
-            color: #d4e0ee;
-            font-size: 13px;
-        }
-
-        /* GENERAL SECTIONS */
-
-        .section {
-            padding: 78px 24px;
-        }
-
-        .section-inner {
-            max-width: 1150px;
-            margin: auto;
-        }
-
-        .section-tag {
-            display: inline-block;
-            margin-bottom: 15px;
-            padding: 6px 13px;
-            border-radius: 30px;
-            background: #fff2d8;
-            color: #94631b;
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 1.3px;
-        }
-
-        .section-title {
-            margin-bottom: 18px;
-            font-family: Georgia, serif;
-            font-size: clamp(31px, 4vw, 46px);
-            line-height: 1.2;
-        }
-
-        .section-title span {
-            color: #c58d36;
-        }
-
-        .section-intro {
-            max-width: 720px;
-            margin-bottom: 30px;
-            color: var(--muted);
-        }
-
-        /* ABOUT */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            align-items: start;
-            gap: 40px;
-        }
-
-        .about-copy p {
-            margin-bottom: 17px;
-            color: var(--muted);
-        }
-
-        .info-card {
-            padding: 27px;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            background: var(--light);
-        }
-
-        .info-card h3 {
-            margin-bottom: 12px;
-        }
-
-        .info-row {
-            display: flex;
-            gap: 12px;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 14px;
-        }
-
-        .info-row:last-child {
-            border-bottom: none;
-        }
-
-        .info-icon {
-            color: #a67525;
-            font-weight: bold;
-        }
-
-        /* CLICKABLE INITIATIVE CARDS */
-
-        .initiatives-section {
-            background: var(--light);
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 22px;
-        }
-
-        .initiative-card {
-            width: 100%;
-            padding: 26px;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            background: white;
-            text-align: left;
-            color: var(--navy);
-            box-shadow: 0 6px 20px #10274708;
-            transition: transform .25s, box-shadow .25s, border-color .25s;
-        }
-
-        .initiative-card:hover,
-        .initiative-card:focus-visible {
-            transform: translateY(-6px);
-            border-color: var(--gold);
-            box-shadow: 0 16px 35px #10274716;
-            outline: none;
-        }
-
-        .initiative-card.selected {
-            border: 2px solid var(--gold);
-            background: #fffaf0;
-            box-shadow: 0 10px 28px #c58d3620;
-        }
-
-        .card-icon {
-            width: 53px;
-            height: 53px;
-            display: grid;
-            place-items: center;
-            margin-bottom: 17px;
-            border-radius: 16px;
-            background: #fff2d8;
-            font-size: 25px;
-        }
-
-        .initiative-card h3 {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .initiative-card p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .card-action {
-            display: inline-block;
-            margin-top: 14px;
-            color: #98681f;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        /* DETAILS SHOWN AFTER CLICKING A CARD */
-
-        .details-section {
-            display: none;
-            background: white;
-        }
-
-        .details-section.show {
-            display: block;
-            animation: sectionAppear .4s ease;
-        }
-
-        @keyframes sectionAppear {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .detail-panel {
-            padding: 32px;
-            border: 1px solid var(--border);
-            border-radius: 23px;
-            background: linear-gradient(145deg, #ffffff, #f5f8fd);
-            box-shadow: 0 15px 40px #0b19300d;
-        }
-
-        .detail-list {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px;
-            margin-top: 22px;
-        }
-
-        .detail-item {
-            padding: 21px;
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--gold);
-            border-radius: 15px;
-            background: white;
-            transition: transform .2s, box-shadow .2s;
-        }
-
-        .detail-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 22px #10274710;
-        }
-
-        .detail-item h3 {
-            margin-bottom: 8px;
-            font-size: 17px;
-        }
-
-        .detail-item p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .detail-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 25px;
-        }
-
-        .btn-dark {
-            background: var(--navy);
-            color: white;
-        }
-
-        /* CONTACT */
-
-        .contact-panel {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            padding: 35px;
-            border-radius: 25px;
-            background: var(--navy);
-            color: white;
-        }
-
-        .contact-panel p {
-            margin-bottom: 22px;
-            color: #d0dcec;
-        }
-
-        .contact-details {
-            display: grid;
-            align-content: center;
-            gap: 14px;
-        }
-
-        .contact-item {
-            padding: 16px;
-            border: 1px solid #ffffff20;
-            border-radius: 14px;
-            background: #ffffff0d;
-        }
-
-        .contact-item small {
-            display: block;
-            margin-bottom: 4px;
-            color: var(--gold);
-        }
-
-        .contact-item strong {
-            overflow-wrap: anywhere;
-        }
-
-        .footer {
-            padding: 26px 20px;
-            background: #071224;
-            color: #cbd6e5;
-            text-align: center;
-            font-size: 12px;
-        }
-
-        /* RESPONSIVE DESIGN */
-
-        @media (max-width: 850px) {
-            .navbar {
-                min-height: 74px;
-                padding: 12px 18px;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                padding: 15px 20px;
-                flex-direction: column;
-                align-items: stretch;
-                background: white;
-                border-bottom: 1px solid var(--border);
-                box-shadow: 0 15px 20px #10274710;
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .nav-btn {
-                width: 100%;
-                text-align: left;
-            }
-
-            .nav-btn.active {
-                transform: none;
-            }
-
-            .hero-inner {
-                grid-template-columns: 1fr;
-                gap: 35px;
-                padding: 50px 22px;
-            }
-
-            .hero-copy {
-                text-align: center;
-            }
-
-            .hero-description {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-actions {
-                justify-content: center;
-            }
-
-            .profile-frame {
-                max-width: 340px;
-            }
-
-            .profile-photo {
-                height: 330px;
-            }
-
-            .about-grid,
-            .contact-panel {
-                grid-template-columns: 1fr;
-            }
-
-            .cards-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .section {
-                padding: 58px 20px;
-            }
-        }
-
-        @media (max-width: 540px) {
-            .brand-name {
-                font-size: 12px;
-            }
-
-            .brand-subtitle {
-                font-size: 8px;
-            }
-
-            .brand-logo {
-                width: 43px;
-                height: 43px;
-            }
-
-            .hero h1 {
-                font-size: 39px;
-            }
-
-            .cards-grid,
-            .detail-list {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-panel,
-            .detail-panel {
-                padding: 22px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: .01ms !important;
-                transition-duration: .01ms !important;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="डॉ. आशीष शर्मा जी - जनसेवा, ग्रामीण विकास, शिक्षा और जनकल्याण">
+  <title>डॉ. आशीष शर्मा | जनसेवा एवं ग्रामीण विकास</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      line-height: 1.7;
+      color: #263238;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #123d2b;
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #123d2b, #23734d);
+      color: white;
+      padding: 55px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 250px;
+      height: 290px;
+      object-fit: cover;
+      object-position: center top;
+      border: 5px solid white;
+      border-radius: 15px;
+      background: #eee;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 22px;
+      margin: 5px 5px 5px 0;
+      border-radius: 6px;
+      background: #ffd166;
+      color: #173526;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #ffbd38;
+    }
+
+    section {
+      padding: 45px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #164d34;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 3px 14px #00000012;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #f0f0f0;
+      border-radius: 7px;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      color: #165638;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      background: white;
+      padding: 5px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px #00000015;
+    }
+
+    .contact {
+      background: #e7f1e9;
+      text-align: center;
+    }
+
+    footer {
+      background: #123d2b;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 35px 5%;
+      }
+
+      .hero img {
+        width: 210px;
+        height: 240px;
+      }
+
+      section {
+        padding: 32px 5%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="header">
-        <nav class="navbar" aria-label="Main navigation">
+  <header>
+    <div class="brand">डॉ. आशीष शर्मा</div>
+    <nav>
+      <a href="#home">होम</a>
+      <a href="#about">परिचय</a>
+      <a href="#work">जनसेवा</a>
+      <a href="#gallery">फोटो गैलरी</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </header>
 
-            <a href="#home" class="brand">
-                <div class="brand-logo">AS</div>
-                <div>
-                    <div class="brand-name">DR. ASHISH SHARMA</div>
-                    <div class="brand-subtitle">PUBLIC SERVICE PROFILE</div>
-                </div>
-            </a>
+  <main>
+    <section class="hero" id="home">
+      <img
+        src="profile.jpg"
+        alt="डॉ. आशीष शर्मा"
+        onerror="this.onerror=null;this.src='image.jpg';"
+      >
 
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="Toggle navigation"
-                aria-expanded="false">
-                ☰
-            </button>
-
-            <div class="nav-links" id="navLinks">
-                <a class="nav-btn active" href="#home">Home</a>
-                <a class="nav-btn" href="#about">About</a>
-                <a class="nav-btn" href="#initiatives">Initiatives</a>
-                <a class="nav-btn" href="#contact">Contact</a>
-            </div>
-
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- HOME -->
-        <section class="hero" id="home">
-            <div class="hero-inner">
-
-                <div class="hero-copy">
-                    <div class="eyebrow">
-                        LEADERSHIP · DEVELOPMENT · PUBLIC SERVICE
-                    </div>
-
-                    <h1>
-                        Working Towards
-                        <span>A Better Tomorrow.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        A personal profile dedicated to public service,
-                        community development and connecting with people.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="#about" class="btn btn-gold">
-                            Explore Profile ↗
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            Get in Touch
-                        </a>
-                    </div>
-
-                    <div class="location">
-                        KHANDAULI · AGRA · UTTAR PRADESH
-                    </div>
-                </div>
-
-                <div class="profile-frame">
-                    <img
-                        id="profilePhoto"
-                        class="profile-photo"
-                        src="{{ url_for('static', filename='profile.jpg') }}"
-                        data-fallback="{{ url_for('static', filename='image.jpg') }}"
-                        alt="Dr. Ashish Sharma"
-                        onerror="if(!this.dataset.fallbackUsed){this.dataset.fallbackUsed='1';this.src=this.dataset.fallback;}else{this.style.display='none';}">
-
-                    <div class="profile-caption">
-                        <h2>Dr. Ashish Sharma</h2>
-                        <p>Block Pramukh · Khandauli</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="section" id="about">
-            <div class="section-inner">
-
-                <span class="section-tag">01 / ABOUT</span>
-
-                <div class="about-grid">
-                    <div class="about-copy">
-                        <h2 class="section-title">
-                            Leadership with a
-                            <span>People-First Approach.</span>
-                        </h2>
-
-                        <p>
-                            Welcome to the personal website of Dr. Ashish
-                            Sharma. This platform is designed to share
-                            profile information, public initiatives and
-                            community-related updates.
-                        </p>
-
-                        <p>
-                            The goal is to make information easier to
-                            access and provide a convenient way for
-                            people to get in touch.
-                        </p>
-
-                        <a href="#contact" class="btn btn-gold">
-                            Contact Now ↗
-                        </a>
-                    </div>
-
-                    <div class="info-card">
-                        <h3>Profile Information</h3>
-
-                        <div class="info-row">
-                            <span class="info-icon">✦</span>
-                            <div>
-                                <strong>Name</strong><br>
-                                Dr. Ashish Sharma
-                            </div>
-                        </div>
-
-                        <div class="info-row">
-                            <span class="info-icon">✦</span>
-                            <div>
-                                <strong>Role</strong><br>
-                                Block Pramukh, Khandauli
-                            </div>
-                        </div>
-
-                        <div class="info-row">
-                            <span class="info-icon">✦</span>
-                            <div>
-                                <strong>Region</strong><br>
-                                Agra, Uttar Pradesh
-                            </div>
-                        </div>
-
-                        <div class="info-row">
-                            <span class="info-icon">✦</span>
-                            <div>
-                                <strong>Profile</strong><br>
-                                Public Service
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- INITIATIVES -->
-        <section class="section initiatives-section" id="initiatives">
-            <div class="section-inner">
-
-                <span class="section-tag">02 / COMMUNITY</span>
-
-                <h2 class="section-title">
-                    Focus <span>Areas</span>
-                </h2>
-
-                <p class="section-intro">
-                    Click any card to explore related information and
-                    useful guidance.
-                </p>
-
-                <div class="cards-grid">
-
-                    <button class="initiative-card" type="button" data-topic="rural">
-                        <div class="card-icon">🏘️</div>
-                        <h3>Rural Development</h3>
-                        <p>Roads, drainage, sanitation and village development information.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                    <button class="initiative-card" type="button" data-topic="facilities">
-                        <div class="card-icon">💧</div>
-                        <h3>Public Facilities</h3>
-                        <p>Water, electricity, cleanliness and essential public services.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                    <button class="initiative-card" type="button" data-topic="updates">
-                        <div class="card-icon">📢</div>
-                        <h3>Public Updates</h3>
-                        <p>Announcements, public notices and community information.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                    <button class="initiative-card" type="button" data-topic="community">
-                        <div class="card-icon">🤝</div>
-                        <h3>Community Connect</h3>
-                        <p>Ways to raise concerns and communicate with the office.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                    <button class="initiative-card" type="button" data-topic="schemes">
-                        <div class="card-icon">📋</div>
-                        <h3>Scheme Information</h3>
-                        <p>Government scheme eligibility and document guidance.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                    <button class="initiative-card" type="button" data-topic="contact">
-                        <div class="card-icon">☎️</div>
-                        <h3>Public Contact</h3>
-                        <p>Contact options and guidance for public enquiries.</p>
-                        <span class="card-action">Explore Details ↗</span>
-                    </button>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- DYNAMIC DETAILS: CONTENT CHANGES WHEN A CARD IS CLICKED -->
-        <section class="section details-section" id="details" aria-live="polite">
-            <div class="section-inner">
-
-                <span class="section-tag">DETAILED INFORMATION</span>
-
-                <h2 class="section-title" id="detailTitle">
-                    Explore <span>Information</span>
-                </h2>
-
-                <p class="section-intro" id="detailIntro"></p>
-
-                <div class="detail-panel">
-                    <div class="detail-list" id="detailList"></div>
-
-                    <div class="detail-actions">
-                        <a href="#contact" class="btn btn-gold">Contact Information ↗</a>
-                        <button type="button" class="btn btn-dark" id="backToCards">
-                            ← Back to Focus Areas
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="section" id="contact">
-            <div class="section-inner">
-
-                <span class="section-tag">03 / CONTACT</span>
-
-                <div class="contact-panel">
-                    <div>
-                        <h2 class="section-title">
-                            Let's Stay
-                            <span>Connected.</span>
-                        </h2>
-
-                        <p>
-                            For enquiries and communication, use the
-                            contact options provided here.
-                        </p>
-
-                        <div class="contact-actions">
-                            <a class="btn btn-gold" href="tel:+919536848951">
-                                ☎ Call Now
-                            </a>
-
-                            <a class="btn btn-outline"
-                               href="https://wa.me/919536848951"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                WhatsApp ↗
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <small>PHONE</small>
-                            <strong>+91 95368 48951</strong>
-                        </div>
-
-                        <div class="contact-item">
-                            <small>LOCATION</small>
-                            <strong>Khandauli, Agra, Uttar Pradesh</strong>
-                        </div>
-
-                        <div class="contact-item">
-                            <small>PROFILE</small>
-                            <strong>Dr. Ashish Sharma · Public Service</strong>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
+      <div class="hero-content">
+        <h1>डॉ. आशीष शर्मा</h1>
         <p>
-            © <span id="year"></span>
-            Dr. Ashish Sharma · Public Service Profile
+          जनसेवा, ग्रामीण विकास, शिक्षा और जनकल्याण के लिए समर्पित।
+          क्षेत्र के विकास और आम नागरिकों की सहायता के लिए निरंतर प्रयास।
         </p>
-        <p>Designed for accessible community information.</p>
-    </footer>
+        <a class="btn" href="#about">हमारे बारे में</a>
+        <a class="btn" href="#gallery">फोटो देखें</a>
+      </div>
+    </section>
 
-    <!-- ALL JAVASCRIPT IS INCLUDED IN THIS HTML FILE -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    <section id="about">
+      <h2 class="section-title">हमारा परिचय</h2>
+      <div class="about">
+        <p>
+          डॉ. आशीष शर्मा की इस वेबसाइट का उद्देश्य जनसेवा से जुड़े कार्यों,
+          सामाजिक गतिविधियों, ग्रामीण विकास, शिक्षा, स्वास्थ्य और
+          जनकल्याण से संबंधित जानकारी लोगों तक पहुँचाना है।
+        </p>
+        <p>
+          यहाँ क्षेत्र में आयोजित कार्यक्रमों, विकास कार्यों और
+          सामाजिक गतिविधियों की तस्वीरें एवं समाचार साझा किए जा सकते हैं।
+        </p>
+      </div>
+    </section>
 
-            const navLinks = document.getElementById("navLinks");
-            const menuToggle = document.getElementById("menuToggle");
-            const navButtons = document.querySelectorAll(".nav-btn");
+    <section id="work">
+      <h2 class="section-title">प्रमुख कार्य एवं गतिविधियाँ</h2>
 
-            const detailSection = document.getElementById("details");
-            const detailTitle = document.getElementById("detailTitle");
-            const detailIntro = document.getElementById("detailIntro");
-            const detailList = document.getElementById("detailList");
-            const backToCards = document.getElementById("backToCards");
-            const cards = document.querySelectorAll(".initiative-card");
+      <div class="cards">
+        <article class="card">
+          <img src="static/janseva.jpg"
+               alt="जनसेवा गतिविधियाँ"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='image.jpg';">
+          <h3>जनसेवा</h3>
+          <p>जनता से जुड़े कार्यों और सामाजिक गतिविधियों की जानकारी।</p>
+        </article>
 
-            document.getElementById("year").textContent =
-                new Date().getFullYear();
+        <article class="card">
+          <img src="static/iso.jpg"
+               alt="सामाजिक कार्यक्रम"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='image.jpg';">
+          <h3>सामाजिक विकास</h3>
+          <p>क्षेत्र में आयोजित कार्यक्रमों और समाजसेवा से जुड़ी गतिविधियाँ।</p>
+        </article>
 
-            // INFORMATION FOR EACH CARD
-            const information = {
-                rural: {
-                    title: "Rural Development",
-                    intro: "Explore information about village infrastructure and rural development.",
-                    points: [
-                        {
-                            title: "Roads and Infrastructure",
-                            text: "Find verified information about village roads, drainage and public infrastructure projects. Check official records for project status."
-                        },
-                        {
-                            title: "Water and Sanitation",
-                            text: "Learn about drinking water facilities, sanitation services and cleanliness initiatives in your area."
-                        },
-                        {
-                            title: "Development Work",
-                            text: "Look for publicly available project details, work orders and progress reports from the relevant government department."
-                        },
-                        {
-                            title: "Report a Local Issue",
-                            text: "Record the location and a clear description of a local problem, then contact the appropriate Gram Panchayat or government department."
-                        }
-                    ]
-                },
+        <article class="card">
+          <img src="static/water.jpg"
+               alt="जल एवं विकास कार्य"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='image.jpg';">
+          <h3>जल एवं ग्रामीण विकास</h3>
+          <p>पेयजल, ग्रामीण सुविधाओं और विकास से संबंधित गतिविधियाँ।</p>
+        </article>
 
-                facilities: {
-                    title: "Public Facilities",
-                    intro: "Find guidance for essential public services and common local concerns.",
-                    points: [
-                        {
-                            title: "Water Supply",
-                            text: "For a water supply issue, note the affected location and contact the responsible local authority or water department."
-                        },
-                        {
-                            title: "Electricity Services",
-                            text: "For a power outage or electricity complaint, use the official electricity provider's complaint channel."
-                        },
-                        {
-                            title: "Cleanliness and Waste",
-                            text: "Provide the location and details of garbage collection or sanitation concerns to the responsible local body."
-                        },
-                        {
-                            title: "Public Infrastructure",
-                            text: "For damaged public facilities, document the issue and report it to the appropriate department."
-                        }
-                    ]
-                },
+        <article class="card">
+          <img src="static/yogi.jpg"
+               alt="विशिष्ट अतिथि के साथ कार्यक्रम"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='image.jpg';">
+          <h3>विशिष्ट कार्यक्रम</h3>
+          <p>सामाजिक और सार्वजनिक कार्यक्रमों की तस्वीरें।</p>
+        </article>
+      </div>
+    </section>
 
-                updates: {
-                    title: "Public Updates",
-                    intro: "Use this section to find and share verified community announcements.",
-                    points: [
-                        {
-                            title: "Official Notices",
-                            text: "Check notices published by the relevant government department or local authority."
-                        },
-                        {
-                            title: "Community Events",
-                            text: "Event information should include the confirmed date, location and organiser."
-                        },
-                        {
-                            title: "Public Announcements",
-                            text: "Verify the source and publication date before sharing an announcement with residents."
-                        },
-                        {
-                            title: "Important Alerts",
-                            text: "For urgent safety or emergency information, follow the instructions of the appropriate official authority."
-                        }
-                    ]
-                },
+    <section id="gallery">
+      <h2 class="section-title">फोटो गैलरी</h2>
 
-                community: {
-                    title: "Community Connect",
-                    intro: "Guidance to help residents communicate concerns clearly and follow up.",
-                    points: [
-                        {
-                            title: "Prepare Your Complaint",
-                            text: "Describe the problem, location, date and how it affects the community. Avoid sharing unnecessary personal information."
-                        },
-                        {
-                            title: "Contact the Right Office",
-                            text: "Choose the local authority or government department responsible for the issue."
-                        },
-                        {
-                            title: "Keep a Record",
-                            text: "Save your complaint reference number, acknowledgement or other relevant communication."
-                        },
-                        {
-                            title: "Follow Up",
-                            text: "If the issue remains unresolved, contact the responsible authority again using its official procedure."
-                        }
-                    ]
-                },
+      <div class="gallery">
+        <img src="static/janseva.jpg" alt="जनसेवा समाचार" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-                schemes: {
-                    title: "Scheme Information",
-                    intro: "Learn how to check government schemes and their official application requirements.",
-                    points: [
-                        {
-                            title: "Eligibility Criteria",
-                            text: "Eligibility differs by scheme and may depend on income, residence, age or other conditions. Confirm the current rules on the official portal."
-                        },
-                        {
-                            title: "Required Documents",
-                            text: "Depending on the scheme, documents may include identity, address, income or bank details. Check the scheme-specific checklist before applying."
-                        },
-                        {
-                            title: "Application Process",
-                            text: "Read the official instructions to determine whether applications are submitted online or through an authorised office."
-                        },
-                        {
-                            title: "Avoid Fraud",
-                            text: "Use verified government websites and authorised centres. Never share your OTP, PIN or password with an unknown person."
-                        }
-                    ]
-                },
+        <img src="static/iso.jpg" alt="समाचार और गतिविधियाँ" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-                contact: {
-                    title: "Public Contact",
-                    intro: "Use the available contact options for enquiries and communication.",
-                    points: [
-                        {
-                            title: "Telephone",
-                            text: "The contact number listed on this website is +91 95368 48951. Confirm that it is authorised for public enquiries."
-                        },
-                        {
-                            title: "WhatsApp",
-                            text: "Use the WhatsApp option only if the listed number accepts messages for public enquiries."
-                        },
-                        {
-                            title: "Location",
-                            text: "The profile is associated with Khandauli, Agra, Uttar Pradesh."
-                        },
-                        {
-                            title: "When Contacting",
-                            text: "Explain your query clearly. Avoid sending sensitive identity documents or financial information unless an official process requires them."
-                        }
-                    ]
-                }
-            };
+        <img src="static/khandau li.jpg" alt="खंडौली कार्यक्रम" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-            // ACTIVE NAVIGATION HIGHLIGHT
-            function setActiveButton(sectionId) {
-                navButtons.forEach(function (button) {
-                    const isActive =
-                        button.getAttribute("href") === "#" + sectionId;
+        <img src="static/missionsakti.jpg" alt="मिशन शक्ति कार्यक्रम" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-                    button.classList.toggle("active", isActive);
+        <img src="static/plant.jpg" alt="पौधारोपण गतिविधि" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-                    if (isActive) {
-                        button.setAttribute("aria-current", "location");
-                    } else {
-                        button.removeAttribute("aria-current");
-                    }
-                });
-            }
+        <img src="static/stadium.jpg" alt="स्टेडियम समाचार" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-            // NAVIGATION BUTTON CLICK
-            navButtons.forEach(function (button) {
-                button.addEventListener("click", function (event) {
-                    const targetId = button.getAttribute("href").substring(1);
-                    const target = document.getElementById(targetId);
+        <img src="static/water.jpg" alt="जल संबंधी समाचार" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
 
-                    if (!target) return;
+        <img src="static/yogi.jpg" alt="कार्यक्रम की तस्वीर" loading="lazy"
+             onerror="this.onerror=null;this.src='image.jpg';">
+      </div>
+    </section>
 
-                    event.preventDefault();
+    <section class="contact" id="contact">
+      <h2 class="section-title">संपर्क करें</h2>
+      <p>जनसेवा एवं सामाजिक गतिविधियों से संबंधित जानकारी के लिए संपर्क करें।</p>
+      <p>संपर्क विवरण जल्द ही यहाँ जोड़े जा सकते हैं।</p>
+    </section>
+  </main>
 
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
+  <footer>
+    <p>© <span id="year"></span> डॉ. आशीष शर्मा | सर्वाधिकार सुरक्षित</p>
+  </footer>
 
-                    setActiveButton(targetId);
-                    history.replaceState(null, "", "#" + targetId);
-
-                    navLinks.classList.remove("open");
-                    menuToggle.textContent = "☰";
-                    menuToggle.setAttribute("aria-expanded", "false");
-                });
-            });
-
-            // MOBILE MENU
-            menuToggle.addEventListener("click", function () {
-                const opened = navLinks.classList.toggle("open");
-
-                menuToggle.textContent = opened ? "✕" : "☰";
-                menuToggle.setAttribute("aria-expanded", String(opened));
-            });
-
-            // SHOW INFORMATION WHEN A CARD IS CLICKED
-            cards.forEach(function (card) {
-                card.addEventListener("click", function () {
-                    const topic = card.dataset.topic;
-                    const selectedInfo = information[topic];
-
-                    if (!selectedInfo) return;
-
-                    detailTitle.textContent = selectedInfo.title;
-                    detailIntro.textContent = selectedInfo.intro;
-                    detailList.replaceChildren();
-
-                    cards.forEach(function (item) {
-                        item.classList.remove("selected");
-                    });
-
-                    card.classList.add("selected");
-
-                    selectedInfo.points.forEach(function (point) {
-                        const article = document.createElement("article");
-                        article.className = "detail-item";
-
-                        const heading = document.createElement("h3");
-                        heading.textContent = point.title;
-
-                        const paragraph = document.createElement("p");
-                        paragraph.textContent = point.text;
-
-                        article.append(heading, paragraph);
-                        detailList.appendChild(article);
-                    });
-
-                    detailSection.classList.add("show");
-
-                    history.replaceState(null, "", "#details");
-
-                    detailSection.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                });
-            });
-
-            // BACK TO CARDS
-            backToCards.addEventListener("click", function () {
-                document.getElementById("initiatives").scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            });
-
-            // UPDATE ACTIVE BUTTON WHEN SCROLLING
-            if ("IntersectionObserver" in window) {
-                const sections = document.querySelectorAll(
-                    "main section[id]:not(#details)"
-                );
-
-                const sectionObserver = new IntersectionObserver(
-                    function (entries) {
-                        entries.forEach(function (entry) {
-                            if (entry.isIntersecting) {
-                                setActiveButton(entry.target.id);
-                            }
-                        });
-                    },
-                    {
-                        rootMargin: "-20% 0px -65% 0px",
-                        threshold: 0
-                    }
-                );
-
-                sections.forEach(function (section) {
-                    sectionObserver.observe(section);
-                });
-            }
-
-        });
-    </script>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
 </html>
